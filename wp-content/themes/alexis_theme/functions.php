@@ -1,4 +1,11 @@
 <?php
+
+include_once('foundation-functions.php');
+
+
+
+
+/************ INITIALIZE THE BONES FRAMEWORK ************/
 /*
 Author: Eddie Machado
 URL: htp://themble.com/bones/
