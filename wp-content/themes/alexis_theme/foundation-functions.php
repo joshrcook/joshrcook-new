@@ -1,6 +1,6 @@
 <?php
 
-/************ INCLUDE FOUNDATIONi 4 CORE ************/
+/************ INCLUDE FOUNDATION 4 CORE ************/
 /*
  * This file initializes the Foundation 4 framework so
  * that it can be use for wordpress,

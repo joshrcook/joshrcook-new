@@ -1,5 +1,6 @@
 <?php
 
+/************ INCLUDE THE FOUNDATION CORE ************/
 require_once( get_template_directory() . '/foundation-functions.php');
 
 /************ INITIALIZE THE BONES FRAMEWORK ************/
