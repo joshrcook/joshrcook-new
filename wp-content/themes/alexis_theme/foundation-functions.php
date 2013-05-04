@@ -7,19 +7,18 @@
  * including the css files and the js files.
  */
 
-$foundation_core_dir = get_template_directory() . '/foundation-core';
+DEFINE('FOUNDATION_DIR', get_template_directory_uri() . '/foundation-core');
 
 // register both scripts and styles during init
 function f4_register_scripts_styles() {
-	// register css styles
-	wp_register_style('normalize', $foundation_core_dir . '/css/normalize.css', false);
-	wp_register_style('foundation-base-css', $foundation_core_dir . '/css/foundation.min.css', false);
+    // register css styles
+    wp_register_style('normalize', FOUNDATION_DIR . '/css/normalize.css');
+    wp_register_style('foundation-base-css', FOUNDATION_DIR . '/css/foundation.min.css');
 
-	// register js files
-	wp_register_script('f4-modernizr', $foundation_core_dir . '/js/vendor/custom.mondernizr.js', false);
-	// this script inits all f4 js
-	// to initialize only parts, use js from js/foundation directory
-	wp_register_script('f4-js', $foundation_core_dir . '/js/foundation.min.js', array('jquery'));
+    // register js files
+    // this script inits all f4 js
+    // to initialize only parts, use js from js/foundation directory
+    wp_register_script('f4-js', FOUNDATION_DIR . '/js/foundation.min.js', array('jquery'));
 }
 
 add_action('init', 'f4_register_scripts_styles');
