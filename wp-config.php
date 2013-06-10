@@ -16,7 +16,7 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'alexis_wp');
+define('DB_NAME', 'joshrcook_wp');
 
 /** MySQL database username */
 define('DB_USER', 'root');
@@ -59,7 +59,7 @@ define('NONCE_SALT',       'GY]bq|?qgya>`.vJFm/Q|8`Y5qt&8Om(|-C5g-H_9dH&_Rpf&9@E
  * You can have multiple installations in one database if you give each a unique
  * prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'alexis_wp_';
+$table_prefix  = 'joshrcook_wp_';
 
 /**
  * WordPress Localized Language, defaults to English.
