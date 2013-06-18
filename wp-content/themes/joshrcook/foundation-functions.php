@@ -33,7 +33,7 @@ add_action('wp_head', 'f4_enqueue_styles');
 
 // init the js in the footer for faster loading times
 function f4_enqueue_scripts() {
-	wp_enqueue_script('f4-modernizr');
+	// wp_enqueue_script('f4-modernizr');
 	wp_enqueue_script('f4-js');
 }
 

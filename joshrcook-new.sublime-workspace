@@ -520,26 +520,10 @@
 	"buffers":
 	[
 		{
-			"file": "wp-content/themes/alexis_theme/style.css",
+			"file": "/Applications/MAMP/htdocs/new_hope/wp-content/themes/newhope/style.css",
 			"settings":
 			{
-				"buffer_size": 8073,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/alexis_theme/scss/style.scss",
-			"settings":
-			{
-				"buffer_size": 719,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/alexis_theme/scss/_global.scss",
-			"settings":
-			{
-				"buffer_size": 9564,
+				"buffer_size": 27560,
 				"line_ending": "Unix"
 			}
 		}
@@ -568,22 +552,49 @@
 	},
 	"file_history":
 	[
+		"/Applications/MAMP/htdocs/new_hope/wp-content/themes/newhope/css/skeleton-style.css",
+		"/Applications/MAMP/htdocs/new_hope/wp-content/themes/newhope/woocommerce.php",
+		"/Applications/MAMP/htdocs/new_hope/wp-content/themes/newhope/header-shop.php",
+		"/Applications/MAMP/htdocs/new_hope/wp-content/themes/newhope/header.php",
+		"/Applications/MAMP/htdocs/new_hope/wp-content/themes/newhope/header-featured-image.php",
+		"/Applications/MAMP/htdocs/new_hope/wp-content/themes/newhope/template-sidebar-right.php",
+		"/Applications/MAMP/htdocs/new_hope/wp-content/themes/newhope/functions.php",
+		"/Applications/MAMP/htdocs/new_hope/wp-content/themes/newhope/page.php",
+		"/Applications/MAMP/htdocs/new_hope/wp-content/themes/newhope/template-shop.php",
+		"/Applications/MAMP/htdocs/new_hope/wp-content/themes/newhope/single.php",
+		"/Applications/MAMP/htdocs/new_hope/wp-content/themes/newhope/archive-product.php",
+		"/Applications/MAMP/htdocs/new_hope/wp-content/themes/newhope/template-staff-sidebar.php",
+		"/Applications/MAMP/htdocs/new_hope/wp-content/themes/newhope/template-small-group-finder.php",
+		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/scss/style.scss",
+		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/scss/_base.scss",
+		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/front-page.php",
+		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/header-home.php",
+		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/scss/_inline-lists.scss",
+		"/Applications/MAMP/htdocs/alexis/wp-content/themes/alexis_theme/header.php",
+		"/Applications/MAMP/htdocs/alexis/wp-content/themes/alexis_theme/scss/style.scss",
+		"/Applications/MAMP/htdocs/alexis/wp-content/themes/alexis_theme/scss/_inline-lists.scss",
+		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/header-details.php",
+		"/Applications/MAMP/htdocs/alexis/wp-content/themes/alexis_theme/front-page.php",
+		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/header.php",
+		"/Applications/MAMP/htdocs/alexis/wp-content/themes/alexis_theme/functions.php",
+		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/functions.php",
+		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/scss/_global.scss",
+		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/alexis_theme/style.css",
+		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/alexis_theme/scss/_global.scss",
+		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/alexis_theme/scss/style.scss",
 		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/alexis_theme/functions.php",
 		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/alexis_theme/foundation-functions.php",
 		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/alexis_theme/scss/_grid.scss",
 		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/alexis_theme/scss/_normalize.scss",
 		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/alexis_theme/library/bones.php",
 		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/alexis_theme/front-page.php",
-		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/alexis_theme/scss/_global.scss",
 		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/alexis_theme/scss/_visibility.scss",
 		"/Applications/MAMP/htdocs/alexis/wp-content/themes/alexis_theme/scss/_960up.scss",
 		"/Applications/MAMP/htdocs/alexis/wp-content/themes/alexis_theme/js/magic-line.js",
-		"/Applications/MAMP/htdocs/alexis/wp-content/themes/alexis_theme/header.php",
 		"/Applications/MAMP/htdocs/alexis/wp-content/themes/alexis_theme/css/mobile.css",
 		"/Applications/MAMP/htdocs/alexis/wp-content/themes/alexis_theme/scss/_normalize.scss",
 		"/Applications/MAMP/htdocs/alexis/wp-content/themes/alexis_theme/style.css",
 		"/Applications/MAMP/htdocs/alexis/wp-content/themes/alexis_theme/scss/base.scss",
-		"/Applications/MAMP/htdocs/alexis/wp-content/themes/alexis_theme/front-page.php",
 		"/Applications/MAMP/htdocs/erin/wp-content/themes/erin_theme/library/admin.php",
 		"/Applications/MAMP/htdocs/erin/wp-content/themes/erin_theme/front-page.php",
 		"/Applications/MAMP/htdocs/erin/wp-content/themes/erin_theme/js/mobile-menu.js",
@@ -597,7 +608,6 @@
 		"/Applications/MAMP/htdocs/erin/wp-content/themes/erin_theme/fonts/ma-sexy/ma-sexy-font.css",
 		"/Applications/MAMP/htdocs/erin/wp-content/themes/erin_theme/fonts/existence/existence-font.css",
 		"/Applications/MAMP/htdocs/erin/wp-content/themes/erin_theme/foundation-functions.php",
-		"/Applications/MAMP/htdocs/new_hope/wp-content/themes/newhope/template-staff-sidebar.php",
 		"/Applications/MAMP/htdocs/new_hope/wp-content/plugins/jrc_staff/show-meta.php",
 		"/Applications/MAMP/htdocs/new_hope/wp-content/plugins/jrc_staff/functions.php",
 		"/Applications/MAMP/htdocs/Taras-site/index.html",
@@ -669,29 +679,7 @@
 		"/Applications/MAMP/htdocs/widget_corp/inc/constants.php",
 		"/Applications/MAMP/htdocs/widget_corp/inc/header.php",
 		"/Applications/MAMP/htdocs/School/css/register.css",
-		"/Applications/MAMP/htdocs/School/register.php",
-		"/Applications/MAMP/htdocs/School/header.php",
-		"/Applications/MAMP/htdocs/School/index.php",
-		"/Applications/MAMP/htdocs/School/css/day_view.css",
-		"/Applications/MAMP/htdocs/School/css/delete_semester.css",
-		"/Applications/MAMP/htdocs/School/delete_semester.php",
-		"/Applications/MAMP/htdocs/School/css/add_semester.css",
-		"/Applications/MAMP/htdocs/School/add_semester.php",
-		"/Applications/MAMP/htdocs/School/semester.php",
-		"/Applications/MAMP/htdocs/School/css/logon.css",
-		"/Applications/MAMP/htdocs/School/css/main.css",
-		"/Applications/MAMP/htdocs/School/logon.php",
-		"/Applications/MAMP/htdocs/School/css/month_view.css",
-		"/Users/joshua/Dropbox/MySQL Create Database Query.sql",
-		"/Applications/MAMP/htdocs/School/logout.php",
-		"/Users/joshua/Dropbox/CIS Final Project/Database Items/MySQL Create Database Query.sql",
-		"/Applications/MAMP/htdocs/School/inc/list_months.php",
-		"/Applications/MAMP/htdocs/School/inc/check_session.php",
-		"/Applications/MAMP/htdocs/School/mysqli_connect.php",
-		"/Applications/MAMP/htdocs/School/css/logout.css",
-		"/Applications/MAMP/htdocs/School/css/semester.css",
-		"/Applications/MAMP/htdocs/School/css/add_semester.php",
-		"/Applications/MAMP/htdocs/School/inc/teacher_log.php"
+		"/Applications/MAMP/htdocs/School/register.php"
 	],
 	"find":
 	{
@@ -710,6 +698,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"jrc-ev",
+			"a.button.teal",
 			"bones_scripts_and_styles",
 			"bones_remove_wp_ver_css_js",
 			"style",
@@ -835,9 +825,7 @@
 			"list_mon",
 			"print_r",
 			"explode",
-			"$_POST['selected_month']",
-			"$selected_month",
-			"$current_month"
+			"$_POST['selected_month']"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -863,80 +851,28 @@
 			[
 				{
 					"buffer": 0,
-					"file": "wp-content/themes/alexis_theme/style.css",
+					"file": "/Applications/MAMP/htdocs/new_hope/wp-content/themes/newhope/style.css",
 					"settings":
 					{
-						"buffer_size": 8073,
+						"buffer_size": 27560,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								390,
-								390
+								12793,
+								12793
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "wp-content/themes/alexis_theme/scss/style.scss",
-					"settings":
-					{
-						"buffer_size": 719,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								504,
-								504
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "wp-content/themes/alexis_theme/scss/_global.scss",
-					"settings":
-					{
-						"buffer_size": 9564,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								9564,
-								9564
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 4465.0,
+						"translation.y": 9562.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -950,7 +886,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 31.0
 	},
 	"layout":
 	{

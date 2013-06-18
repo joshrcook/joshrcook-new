@@ -1,5 +1,17 @@
 <?php
 
+function add_scripts_styles()
+{
+    wp_register_script('modernizr', get_template_directory_uri() . '/js/vendor/modernizr.development.js', array('jquery'));
+    wp_enqueue_script('modernizr');
+    wp_register_style('open-sans-google-font', 'http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800');
+    wp_enqueue_style('open-sans-google-font');
+    wp_register_style('source-sans-pro-google-font', 'http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic');
+    wp_enqueue_style('source-sans-pro-google-font');
+}
+
+add_action('wp_enqueue_scripts', 'add_scripts_styles');
+
 /**
  * Function to get the menu items from a menu, given a slug
  * 

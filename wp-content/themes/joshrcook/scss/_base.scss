@@ -1,0 +1,40 @@
+body {
+	font-size: 14px;
+}
+
+header {
+	background: url('img/assets/bg/road-veryhigh-1000-600.jpg');
+	background-size: cover;
+	background-position: 60% 30%;
+
+	.columns {
+		margin-top: 2em;
+	}
+
+	.logo {
+		text-align: center;
+
+		img {
+			height: 150px;
+			width: 150px;
+		}
+
+	}
+
+	.nav {
+		display: none;
+	}
+
+	.hero {
+
+		h1 {
+			color: white;
+			font-family: $font1;
+			font-weight: 600;
+			font-size: 2.7em;
+			margin-bottom: 30%;
+			margin-top: 30%;
+			display: inline-block;
+		}
+	}
+}
