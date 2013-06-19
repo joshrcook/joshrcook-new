@@ -1,5 +1,24 @@
 body {
 	font-size: 14px;
+	font-family: $font1;
+	color: $color7;
+	font-weight: 300;
+	line-height: 1.3;
+}
+
+a {
+	color: $color3;
+	text-decoration: none;
+	font-weight: 300;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+	color: $color1;
 }
 
 header {
@@ -23,18 +42,188 @@ header {
 
 	.nav {
 		display: none;
+
+		.button {
+			background-color: inherit;
+			border: none;
+			text-transform: none;
+			padding: 0;
+		}
 	}
 
 	.hero {
 
 		h1 {
 			color: white;
-			font-family: $font1;
 			font-weight: 600;
 			font-size: 2.7em;
 			margin-bottom: 30%;
 			margin-top: 30%;
 			display: inline-block;
+			text-transform: none;
 		}
 	}
 }
+
+.hr-text {
+	border-top: 1px solid $color2;
+	margin: 3.5em auto;
+	height: 0;
+
+	h1.section-title {
+		color: #515150;
+		margin: 0;
+		padding: 0 1em;
+		position: relative;
+		background-color: white;
+		display: inline-block;
+		font-weight: 500;
+		top: -10px;
+		font-size: 1.3em;
+	}	
+}
+
+.work-slider {
+
+	height: 30em;
+	background-color: gray;
+}
+
+.button {
+	text-transform: uppercase;
+	background-color: $color3;
+	border: 1px solid $color4;
+	color: white;
+	margin: 3.5em auto;
+	font-weight: 500;
+}
+
+a.button:hover {
+	text-decoration: none;
+}
+
+.button.medium, .button {
+	padding: .5em 3em;
+	font-size: 1.2em;
+}
+
+section:nth-child(2n + 1), section:nth-child(2n + 1) h1.section-title {
+	background-color: $color5;
+}
+
+section.blog {
+
+	.post-details {
+		color: $color6;
+	}
+
+	.main-post {
+
+		h2 {
+			margin: 0;
+			font-size: 2.5em;
+		}
+	}
+
+	.post-list {
+
+		.blog-listing {
+			margin-bottom: 2em;
+
+			h3 {
+				font-weight: 600;
+				margin-bottom: .1em;
+				font-size: 1.5em;
+			}
+
+			.post-details {
+
+				time {
+					font-size: .9em;
+				}
+			}
+		}
+
+		.blog-listing:first-child {
+
+			h3 {
+				margin-top: 0;
+			}
+		}
+	}
+}
+
+.icon {
+	background: $color8;
+	display: inline-block;
+	border-radius: 999px;
+}
+
+i {
+	color: white;
+}
+
+.why-us {
+	$icon-diameter: 125;
+
+	.icon {
+		height: $icon-diameter * 1px;
+		width: $icon-diameter * 1px;
+
+		i {
+			font-size: 4em;
+			line-height: $icon-diameter * 1px;
+		}
+	}
+
+	.reason-title {
+		margin: 1em auto;
+	}
+
+	.reason-text {
+		margin-top: 0;
+	}
+
+	.reason:first-child {
+
+		.icon {
+
+			i {
+				font-size: 5.5em;
+			}
+		}
+	}
+
+	.button-group {
+		margin: 3.5em auto;
+		position: relative;
+		height: 45px;
+
+		.button {
+			width: 50%;
+			padding-left: 0;
+			padding-right: 0;
+			margin: 0;
+			float: left;
+		}
+
+		.or {
+			$height: 30;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			height: $height * 1px;
+			width: $height * 1px;
+			margin-left: ($height / -2) * 1px;
+			margin-top: ($height / -2) * 1px;
+			text-transform: uppercase;
+			font-weight: 500;
+			font-size: .8em;
+			line-height: $height * 1px;
+			color: white;
+			background-color: $color4;
+			border-radius: 100px;
+		}
+	}
+}
+

@@ -4,6 +4,14 @@ body {
 
 $logoHeight: 150px;
 
+.hr-text {
+
+	h1.section-title {
+		font-size: 1.5em;
+		top: -16px;
+	}
+}
+
 header {
 
 	.logo {
@@ -33,6 +41,7 @@ header {
 					font-size: 1.5em;
 					letter-spacing: .05em;
 					line-height: $logoHeight;
+					font-weight: 500;
 				}
 			}
 
@@ -51,3 +60,4 @@ header {
 		}
 	}
 }
+

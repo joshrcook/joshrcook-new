@@ -8,6 +8,8 @@ function add_scripts_styles()
     wp_enqueue_style('open-sans-google-font');
     wp_register_style('source-sans-pro-google-font', 'http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic');
     wp_enqueue_style('source-sans-pro-google-font');
+    wp_register_style('font-awesome', '//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css');
+    wp_enqueue_style('font-awesome');
 }
 
 add_action('wp_enqueue_scripts', 'add_scripts_styles');
