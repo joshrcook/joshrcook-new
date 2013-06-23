@@ -1,5 +1,6 @@
 <?php get_header('home'); ?>
-
+<?php
+?>
 
 <section class="latest-work">
     <div class="row">
@@ -10,10 +11,15 @@
         </div>
     </div>
     <div class="row">
-        <div class="columns">
-            <div class="work-slider">
-
-            </div>
+        <div class="columns text-center">
+            <ul data-orbit>
+              <li>
+                <img src="<?php echo get_template_directory_uri() . '/img/test/iMac-Mingei.png'; ?>" alt="">
+              </li>
+              <li>
+                <img src="<?php echo get_template_directory_uri() . '/img/test/New-Hope-Responsive-3.jpg'; ?>" alt="">
+              </li>
+            </ul>
         </div>
     </div>
     <div class="row">

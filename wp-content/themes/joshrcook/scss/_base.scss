@@ -6,6 +6,10 @@ body {
 	line-height: 1.3;
 }
 
+.row {
+	max-width: 70em;
+}
+
 a {
 	color: $color3;
 	text-decoration: none;
@@ -83,10 +87,64 @@ header {
 	}	
 }
 
-.work-slider {
+.orbit-container {
+	background-color: white;
 
-	height: 30em;
-	background-color: gray;
+	.orbit-slides-container {
+
+		img {
+			margin: 0 auto;
+		}
+	}
+
+	a.orbit-prev, a.orbit-next {
+		position: absolute;
+		bottom: 10px;
+		top: auto;
+		left: auto;
+		height: 60px;
+		width: 60px;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-color: rgba(0,0,0, 0.5);
+
+		span {
+			display: none;
+		}
+	}
+
+	a.orbit-prev {
+		right: 80px;
+		background-image: url('img/assets/arrows/slider-nav-left-arrow.png');
+	}
+
+	a.orbit-next {
+		right: 10px;
+		background-image: url('img/assets/arrows/slider-nav-right-arrow.png');
+
+	}
+
+	.orbit-slide-number {
+		display: none;
+	}
+
+	.orbit-timer {
+		display: none;
+	}
+}
+
+.orbit-bullets {
+	display: none;
+	li {
+		height: 9px;
+		width: 9px;
+		background-color: rgba(0,0,0, 0.2);
+		border-color: rgba(0,0,0,0);
+	}
+
+	li.active {
+		background-color: rgba(0,0,0, 0.6);
+	}
 }
 
 .button {
@@ -118,7 +176,8 @@ section.blog {
 	}
 
 	.main-post {
-
+		margin-bottom: 2em;
+		
 		h2 {
 			margin: 0;
 			font-size: 2.5em;
@@ -223,6 +282,72 @@ i {
 			color: white;
 			background-color: $color4;
 			border-radius: 100px;
+		}
+	}
+}
+
+footer {
+	color: white;
+
+	h1 {
+		color: white;
+		letter-spacing: .05em;
+		font-size: 1.4em;
+		font-weight: 600;
+		margin: 2em auto 1em;
+	}
+	.columns {
+		text-align: center;
+
+		p {
+			font-size: .9em;
+			line-height: 1.5em;
+		}
+
+		.twitter-post {
+			margin-bottom: 1.7em;
+
+			p.twitter-body {
+				margin-bottom: .3em;
+			}
+
+			time {
+				color: $color9;
+				font-size: .75em;
+			}
+		}
+		
+	}
+	section.footer-upper {
+		background-color: $color7;
+		padding-bottom: 2em;
+
+		.social {
+			$diameter: 3.5;
+			display: inline-block;
+			height: $diameter * 1em;
+			width: $diameter * 1em;
+			background-color: $color10;
+			text-align: center;
+			border-radius: 100px;
+			margin-right: .5em;
+			margin-bottom: .5em;
+
+			i {
+				$fontSize: 2;
+				font-size:  $fontSize * 1em;
+				line-height: $diameter / $fontSize * 1em;
+				
+			}
+		}
+	}
+
+	section.footer-lower {
+		background-color: $color10;
+
+		.columns {
+			margin: .5em auto;
+			text-align: center;
 		}
 	}
 }

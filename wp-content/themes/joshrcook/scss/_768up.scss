@@ -61,3 +61,28 @@ header {
 	}
 }
 
+section.blog {
+
+	.main-post {
+		margin-bottom: 0;
+	}
+}
+
+footer {
+
+	.columns {
+		text-align: left;
+	}
+
+	section.footer-lower {
+
+		.columns:first-child {
+			text-align: left;
+		}
+
+		.columns:last-child {
+			text-align: right;
+		}
+	}
+}
+

@@ -25,7 +25,18 @@
             <div class="columns large-4">
                 <h1 class="footer-title">Connect with Us</h1>
                 <div class="social-icons">
-                    
+                    <div class="social">
+                        <i class="icon-facebook"></i>
+                    </div>
+                    <div class="social">
+                        <i class="icon-twitter"></i>
+                    </div>
+                    <div class="social">
+                        <i class="icon-github-alt"></i>
+                    </div>
+                    <div class="social">
+                        <i class="icon-linkedin"></i>
+                    </div>
                 </div>
             </div>
         </div>
@@ -35,13 +46,15 @@
             <div class="columns large-6">
                 <p class="copyright-line">Copyright <?php echo date('Y'); ?>, Josh R Cook Design</p>
             </div>
-            <div class="columns large-6 text-right">
+            <div class="columns large-6">
                 <p class="copyright-line">Photos courtesy of <a href="#">Shermeee</a></p>
             </div>
         </div>
     </section>
 </footer>			
-
+        <script>
+            jQuery(document).foundation();
+        </script>
 		<?php wp_footer(); ?>
 
 	</body>
