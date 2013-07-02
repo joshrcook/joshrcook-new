@@ -204,6 +204,7 @@ class PI_SimpleTwitterTweets extends WP_Widget{
 			    
 			    	// Core info.
 			    	$name = $tweet->user->name;
+			    	$screen_name = $tweet->user->screen_name;
 			    	$permalink = 'http://twitter.com/'. $name .'/status/'. $tweet->id_str;
 
 			    	/* Alternative image sizes method: http://dev.twitter.com/doc/get/users/profile_image/:screen_name */
@@ -240,7 +241,7 @@ class PI_SimpleTwitterTweets extends WP_Widget{
 			    <?php foreach($tweets as $t) : ?>
 			        <li><?php echo $t['text']; ?>
 			            <br/><em>
-			            <a href="http://www.twitter.com/<?php echo $name; ?>" target="_blank" title="Follow <?php echo $name; ?> on Twitter [Opens new window]"><?php echo human_time_diff($t['time'], current_time('timestamp')); ?> ago</a>
+			            <a href="http://www.twitter.com/<?php echo $screen_name; ?>" target="_blank" title="Follow <?php echo $name; ?> on Twitter [Opens new window]"><?php echo human_time_diff($t['time'], current_time('timestamp')); ?> ago</a>
 			            </em>
 			        </li>
 			    <?php endforeach; ?>

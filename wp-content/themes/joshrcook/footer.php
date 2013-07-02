@@ -28,22 +28,22 @@
             <div class="columns large-4">
                 <h1 class="footer-title">Connect with Us</h1>
                 <div class="social-icons">
-                    <a href="#">
+                    <a href="https://www.facebook.com/joshua.cook.5648">
                         <div class="social facebook">
                             <i class="icon-facebook"></i>
                         </div>
                     </a>
-                    <a href="#">
+                    <a href="https://twitter.com/joshrcook">
                         <div class="social twitter">
                             <i class="icon-twitter"></i>
                         </div>
                     </a>
-                    <a href="#">
+                    <a href="https://github.com/joshrcook">
                         <div class="social github">
                             <i class="icon-github-alt"></i>
                         </div>
                     </a>
-                    <a href="#">
+                    <a href="www.linkedin.com/pub/joshua-cook/44/14/290/">
                         <div class="social linked-in">
                             <i class="icon-linkedin"></i>
                         </div>
