@@ -20,9 +20,38 @@ function add_scripts_styles()
     // enqueue foundation 4 styles
     wp_register_style('foundation-4-orbit-css', get_template_directory_uri() . '/vendor/foundation-4.2.2.custom.orbit/css/foundation.min.css');
     wp_enqueue_style('foundation-4-orbit-css');
+
+    if(is_front_page()) {
+    	wp_register_script('parallax', get_template_directory_uri() . '/js/parallax.js', array('jquery'), false, true);
+    	wp_enqueue_script('parallax');
+    }
 }
 
 add_action('wp_enqueue_scripts', 'add_scripts_styles');
+
+/**
+*	Control the excerpt length
+*/
+function jrc_excerpt_length($length){
+	return 100;
+}
+
+add_action('excerpt_length', 'jrc_excerpt_length', 999);
+
+
+function jrc_widgets_init() {
+
+	register_sidebar( array(
+		'name' => 'Footer Left',
+		'id' => 'footer-left',
+		'before_widget' => '<div class="columns large-4">',
+		'after_widget' => '</div>',
+		'before_title' => '<h1 class="footer-title">',
+		'after_title' => '</h1>'
+		));
+}
+
+add_action('widgets_init', 'jrc_widgets_init');
 
 /**
  * Function to get the menu items from a menu, given a slug

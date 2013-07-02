@@ -2,15 +2,15 @@ body {
 	font-size: 16px;
 }
 
-$logoHeight: 150px;
-
 .hr-text {
 
 	h1.section-title {
-		font-size: 1.5em;
-		top: -16px;
+		font-size: 1.8em;
+		top: -21px;
 	}
 }
+
+$logoHeight: 180px;
 
 header {
 
@@ -19,7 +19,7 @@ header {
 
 		img {
 			height: $logoHeight;
-			width: 150px;
+			width: 180px;
 		}
 	}
 	
@@ -32,13 +32,13 @@ header {
 
 			li {
 				display: inline-block;
-				margin-right: 2.5em;
+				margin-right: 2.75em;
 
 				a {
 					color: white;
 					text-decoration: none;
 					font-family: $font1;
-					font-size: 1.5em;
+					font-size: 1.875em;
 					letter-spacing: .05em;
 					line-height: $logoHeight;
 					font-weight: 500;
@@ -54,9 +54,9 @@ header {
 	.hero {
 
 		h1 {
-			font-size: 4em;
-			margin: 40% auto 40% auto;
-			line-height: 1.35;
+			font-size: 4.4em;
+			margin: 0.56818181818182em auto 4.1em auto;
+			line-height: 1.3;
 		}
 	}
 }

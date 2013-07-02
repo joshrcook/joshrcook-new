@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<header class="hero-bg">
+<header class="hero-bg" id="home-banner">
     <div class="row main-logo">
             <div class="columns large-3 logo">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/assets/logos/logo-white.svg" alt="logo" id="logo" />
@@ -28,7 +28,7 @@
             </div>
     </div>
     <div class="row hero">
-            <div class="columns large-7 large-centered text-center">
+            <div class="columns large-7 large-centered text-center" id="banner-text">
                     <h1>We build websites that engage.</h1>
             </div>
     </div>

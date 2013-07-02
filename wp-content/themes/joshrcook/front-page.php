@@ -1,6 +1,4 @@
 <?php get_header('home'); ?>
-<?php
-?>
 
 <section class="latest-work">
     <div class="row">
@@ -12,13 +10,26 @@
     </div>
     <div class="row">
         <div class="columns text-center">
+            <?php
+            $works = get_posts(array(
+                'post_type' => 'jrc_por',
+                'posts_per_page' => 9999
+            ));
+            // print_r($works);
+            ?>
             <ul data-orbit>
-              <li>
-                <img src="<?php echo get_template_directory_uri() . '/img/test/iMac-Mingei.png'; ?>" alt="">
-              </li>
-              <li>
-                <img src="<?php echo get_template_directory_uri() . '/img/test/New-Hope-Responsive-3.jpg'; ?>" alt="">
-              </li>
+                <?php 
+                if($works) {
+
+                    foreach($works as $work_item) {
+                        ?>
+                        <li>
+                            <a href="<?php get_permalink($work_item->ID); ?>"><?php echo get_the_post_thumbnail($work_item->ID, 'full'); ?></a>
+                        </li>
+                        <?php
+                    }
+                }
+                ?>
             </ul>
         </div>
     </div>
@@ -37,43 +48,38 @@
         </div>
     </div>
     <div class="row">
-        <div class="columns large-7 main-post">
-            <h2>This is the title of the latest post</h2>
-            <p class="post-details">
-                <time datetime="2013-05-25">May 25, 2013</time>&nbsp;/&nbsp;
-                <span class="comments"><a href="#">0 Comments</a></span>&nbsp;/&nbsp;
-                <span class="category">Category: </span><span class="category-title"><a href="#">Rants N' Raves</a></span> 
-            </p>
-            <p class="post-excerpt">I just love to blog.  I can't tell you all about that but in this
-                excellent mockup I'll tell you all about it. This is a sophisticated mockup that will give 
-                my new site it's look and feel.  And since I have so much to say, maybe I should say it all
-                right here.  Everyone loves to read text, don't they? I sure know I do. And once I get done
-                reading the text, I'm always sure to go tell someone else about it. It's just something I 
-                do. I would love to read more but I have the feeling that someone is about to cut me off...
-                <a href="#">Read More</a>
-            </p>
-        </div>
-        <div class="columns large-4 large-offset-1 post-list">
-            <div class="blog-listing">
-                <h3 class="blog-list-title">This is Another Title</h3>
-                <div class="post-details">
-                    <time datetime="2013-05-25">May 25, 2013</time>
+        <?php 
+            $first_post = true;
+            query_posts(array('post_type' => 'post', 'posts_per_page' => 4));
+            if(have_posts()): while(have_posts()): the_post();
+                if($first_post) { ?>
+                    <div class="columns large-7 main-post">
+                        <a href="<?php echo get_permalink(); ?>"><h2><?php echo get_the_title(get_the_ID()); ?></h2></a>
+                        <p class="post-details">
+                            <time datetime="<?php echo get_the_date('Y-m-d'); ?>"><?php the_date('M j, Y'); ?></time>&nbsp;/&nbsp;
+                            <a href="<?php echo get_permalink(get_the_ID()); ?>"><span class="comments"><a href="#"><?php echo $post->comment_count; ?> Comments</a></span></a>&nbsp;/&nbsp;
+                            <span class="category">Category: </span><span class="category-title"><a href="#"><?php the_terms(get_the_ID(), 'category'); ?></a></span> 
+                        </p>
+                        <p class="post-excerpt"><?php the_excerpt(); ?></p>
+                    </div>
+                    <div class="columns large-4 large-offset-1 post-list">
+                <?php } else {
+                // if the post isn't the first one
+                ?>
+                <div class="blog-listing">
+                    <a href="<?php echo get_permalink(); ?>"><h3 class="blog-list-title"><?php the_title(); ?></h3></a>
+                    <div class="post-details">
+                        <time datetime="<?php echo get_the_date('Y-m-d'); ?>"><?php echo get_the_date('M j, Y'); ?></time>
+                    </div>
                 </div>
-            </div>
-            <div class="blog-listing">
-                <h3 class="blog-list-title">This is Another Title</h3>
-                <div class="post-details">
-                    <time datetime="2013-05-25">May 25, 2013</time>
-                </div>
-            </div>
-            <div class="blog-listing">
-                <h3 class="blog-list-title">This is Another Title</h3>
-                <div class="post-details">
-                    <time datetime="2013-05-25">May 25, 2013</time>
-                </div>
-            </div>
-        </div>
-    </div>
+                <?php
+                }
+                $first_post = false;
+            endwhile;
+            endif;
+        ?>
+        </div><!-- end .post-list div -->
+    </div><!-- end row -->
     <div class="row">
         <div class="columns text-center">
             <a href="#">
