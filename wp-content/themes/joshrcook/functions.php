@@ -65,6 +65,34 @@ function get_nav_menu_items($menu_slug) {
     return wp_get_nav_menu_items( $menu->term_id );
 }
 
+function print_nav_menu($post_id) {
+	$menu_items = get_nav_menu_items('main-nav');
+    // echo '<pre>' . print_r($menu_items, 1) . '</pre>';
+    foreach($menu_items as $menu_item) {
+        echo '<li';
+        if(isset($post_id) && $post_id == $menu_item->object_id) {
+            echo ' class="selected no-js"';
+        }
+            echo '><a class="button secondary" href="' . $menu_item->url . '">' . $menu_item->title . '</a></li>';
+    }
+}
+
+function get_default_categories($post_id, $seperator = ',') {
+	$categories = get_the_category($post_id);
+	$output = '';
+	if($categories) {
+		for($i = 0; $i < count($categories); $i++) {
+			// 
+			$output .= '<a href="' . get_category_link($categories[$i]->term_id) . '">' . $categories[$i]->name . '</a>';
+
+			if($i != (count($categories) - 1)) {
+				$output .= $seperator . "&nbsp;";
+			}
+		}
+	}
+	return $output;
+}
+
 /************ INCLUDE THE FOUNDATION CORE ************/
 require_once( get_template_directory() . '/foundation-functions.php');
 
