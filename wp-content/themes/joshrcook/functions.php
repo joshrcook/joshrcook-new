@@ -93,6 +93,13 @@ function get_default_categories($post_id, $seperator = ',') {
 	return $output;
 }
 
+// register the primary menu
+register_nav_menu('primary', 'Primary Menu');
+
+
+
+
+
 /************ INCLUDE THE FOUNDATION CORE ************/
 require_once( get_template_directory() . '/foundation-functions.php');
 
@@ -128,7 +135,7 @@ require_once('library/bones.php'); // if you remove this, bones will break
 	- example custom taxonomy (like categories)
 	- example custom taxonomy (like tags)
 */
-require_once('library/custom-post-type.php'); // you can disable this if you like
+// require_once('library/custom-post-type.php'); // you can disable this if you like
 /*
 3. library/admin.php
 	- removing some default WordPress dashboard widgets
@@ -173,9 +180,9 @@ you like. Enjoy!
 // Sidebars & Widgetizes Areas
 function bones_register_sidebars() {
 	register_sidebar(array(
-		'id' => 'sidebar1',
-		'name' => __('Sidebar 1', 'bonestheme'),
-		'description' => __('The first (primary) sidebar.', 'bonestheme'),
+		'id' => 'blog-sidebar',
+		'name' => __('Blog Sidebar', 'bonestheme'),
+		'description' => __('The sidebar used on blog pages.', 'bonestheme'),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' => '</div>',
 		'before_title' => '<h4 class="widgettitle">',

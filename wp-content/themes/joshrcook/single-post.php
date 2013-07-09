@@ -11,10 +11,10 @@
 			?>
 			<h1><?php the_title(); ?></h1>
 			
-			<div class="post-details">><?php 
-				echo get_the_date('F j, Y') . ' / ';
+			<div class="post-details"><?php 
+				echo get_the_date('F j, Y') . '&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;';
 				comments_number('0 Comments'); 
-				echo ' / Category: ' . get_default_categories($post->ID); 
+				echo '&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Category: ' . get_default_categories($post->ID); 
 			?></div>
 
 			<?php the_content(); ?>
@@ -23,6 +23,9 @@
 		</div>
 	</div>
 	<div class="columns large-3 large-offset-1">
+		<div class="sidebar">
+			<?php get_sidebar('blog'); ?>
+		</div>
 	</div>
 </div>
 

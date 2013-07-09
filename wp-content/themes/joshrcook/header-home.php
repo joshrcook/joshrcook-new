@@ -11,10 +11,10 @@
                 </script>    
             </div>
             <div class="columns large-9 text-right nav">
-                    <ul class="nav">
-                        <?php 
-                            print_nav_menu($post->ID);
-                        ?>
+                <ul class="nav">
+                    <?php 
+                        print_nav_menu($post->ID);
+                    ?>
                 </ul>
             </div>
     </div>

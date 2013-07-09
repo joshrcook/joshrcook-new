@@ -2,21 +2,6 @@
     <section class="footer-upper">
         <div class="row">
             <?php if(dynamic_sidebar('Footer Left')) : else : endif; ?>
-            <!-- 
-            <div class="columns large-4">
-                <h1 class="footer-title">Latest from Twitter</h1>
-                <div class="twitter-post">
-                    <p class="twitter-body">Just updated my site and I'm so excited to show it off. 
-                    Make sure and have a look and tell me what you think - www.joshrcook.com. #Awesome</p>
-                    <time datetime="2013-05-22">1 day ago</time>
-                </div>
-                <div class="twitter-post">
-                    <p class="footer-text">Just updated my site and I'm so excited to show it off. 
-                    Make sure and have a look and tell me what you think - www.joshrcook.com. #Awesome</p>
-                    <time datetime="2013-05-22">1 day ago</time>
-                </div>
-            </div>
-            -->
             <div class="columns large-4">
                 <h1 class="footer-title">About Us</h1>
                 <p class="footer-text">We are an awesome web agency. Want to know just how awesome? 
