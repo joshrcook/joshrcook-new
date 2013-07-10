@@ -13,16 +13,26 @@
  *
  * @package WordPress
  */
-
+if($_SERVER['HTTP_HOST'] == 'localhost:8888') {
+	$db_name = 'joshrcook_wp';
+	$db_user = 'root';
+	$db_pass = 'root';
+	$db_prefix = 'joshrcook_wp_';
+} else {
+	$db_name = 'joshrcoo_portfolio';
+	$db_user = 'joshrcoo_root';
+	$db_pass = 'IloveTara23!!';
+	$db_prefix = 'jrc_por_';
+}
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'joshrcook_wp');
+define('DB_NAME', $db_name);
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', $db_user); 
 
 /** MySQL database password */
-define('DB_PASSWORD', 'root');
+define('DB_PASSWORD', $db_pass);
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
@@ -59,7 +69,7 @@ define('NONCE_SALT',       'GY]bq|?qgya>`.vJFm/Q|8`Y5qt&8Om(|-C5g-H_9dH&_Rpf&9@E
  * You can have multiple installations in one database if you give each a unique
  * prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'joshrcook_wp_';
+$table_prefix  = $db_prefix;
 
 /**
  * WordPress Localized Language, defaults to English.
