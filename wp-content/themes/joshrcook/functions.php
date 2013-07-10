@@ -96,8 +96,86 @@ function get_default_categories($post_id, $seperator = ',') {
 // register the primary menu
 register_nav_menu('primary', 'Primary Menu');
 
+/**
+ *	Callback for the comments template
+ */
+function jrc_post_comments($comment, $args, $depth) {
+	$_GLOBALS['comment'] = $comment; ?>
+	<div class="row single-comment">
+		<li <?php comment_class(); ?>>
+			<div class="columns large-2 small-2">
+				<div class="avatar"><?php echo get_avatar($comment, '100'); ?></div>
+			</div>
+			<div class="columns large-10 small-10">
+				<div class="row">
+					<div class="columns">
+						<?php if ($comment->comment_approved == '0') : ?>
+							<div class="alert alert-info">
+								<p><?php _e('Your comment is awaiting moderation.', 'bonestheme') ?></p>
+							</div>
+						<?php endif; ?>
+					</div>
+				</div>
+				<div class="row">
+					<div class="columns large-6 small-6">
+						<h2 class="comment-name"><?php comment_author(); ?></h2>
+						<time datetime="<?php echo comment_date('Y-m-d'); ?>"><?php if(!function_exists('how_long_ago')){comment_date() . ' at ' . comment_time(); } else { echo how_long_ago(get_comment_time('U')); } ?></time>
+					</div>
+					<div class="columns large-6 small-6 text-right">
+						<div class="reply">
+							<?php comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="columns">
+						<?php comment_text(); ?>
+					</div>
+				</div>
+			</div>
+		</li> 
+	</div>
+	<?php 
+}
 
+/**
+ *	Function to help with relative dates in comments
+ */
+if(!function_exists('how_long_ago')){
+    function how_long_ago($timestamp){
+        $difference = time() - $timestamp;
 
+        if($difference >= 60*60*24*365){        // if more than a year ago
+            $int = intval($difference / (60*60*24*365));
+            $s = ($int > 1) ? 's' : '';
+            $r = $int . ' year' . $s . ' ago';
+        } elseif($difference >= 60*60*24*7*5){  // if more than five weeks ago
+            $int = intval($difference / (60*60*24*30));
+            $s = ($int > 1) ? 's' : '';
+            $r = $int . ' month' . $s . ' ago';
+        } elseif($difference >= 60*60*24*7){        // if more than a week ago
+            $int = intval($difference / (60*60*24*7));
+            $s = ($int > 1) ? 's' : '';
+            $r = $int . ' week' . $s . ' ago';
+        } elseif($difference >= 60*60*24){      // if more than a day ago
+            $int = intval($difference / (60*60*24));
+            $s = ($int > 1) ? 's' : '';
+            $r = $int . ' day' . $s . ' ago';
+        } elseif($difference >= 60*60){         // if more than an hour ago
+            $int = intval($difference / (60*60));
+            $s = ($int > 1) ? 's' : '';
+            $r = $int . ' hour' . $s . ' ago';
+        } elseif($difference >= 60){            // if more than a minute ago
+            $int = intval($difference / (60));
+            $s = ($int > 1) ? 's' : '';
+            $r = $int . ' minute' . $s . ' ago';
+        } else {                                // if less than a minute ago
+            $r = 'moments ago';
+        }
+
+        return $r;
+    }
+}
 
 
 /************ INCLUDE THE FOUNDATION CORE ************/

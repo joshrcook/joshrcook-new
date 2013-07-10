@@ -35,7 +35,7 @@
     </div>
     <div class="row">
         <div class="columns text-center">
-            <button class="button medium">More Work</button>
+            <button class="button medium main-button">More Work</button>
         </div>
     </div>
 </section>
@@ -83,7 +83,7 @@
     <div class="row">
         <div class="columns text-center">
             <a href="#">
-                <button class="button">Go to Blog</button>
+                <button class="button main-button">Go to Blog</button>
             </a>
         </div>
     </div>
@@ -158,9 +158,9 @@
     <div class="row">
         <div class="columns large-6 large-centered text-center">
             <div class="button-group">
-                <a href="#" class="button medium">Plan a Project</a>
+                <a href="#" class="button medium main-button">Plan a Project</a>
                 <span class="or">or</span>
-                <a href="#" class="button medium">Contact Us</a>
+                <a href="#" class="button medium main-button">Contact Us</a>
             </div>
         </div>
     </div>

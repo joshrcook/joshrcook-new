@@ -11,12 +11,15 @@ License URI:
 */
 
 /* Foundation components */
-@import "foundation_normalize";
-@import "foundation_global";
-@import "foundation_grid";
-@import "foundation_visibility";
-@import "foundation_inline_lists";
-@import "foundation_top_bar";
+@import "foundation/variables";
+@import "foundation/normalize";
+@import "foundation/components/global";
+@import "foundation/components/buttons";
+@import "foundation/components/forms";
+@import "foundation/components/grid";
+@import "foundation/components/inline-lists";
+@import "foundation/components/top-bar";
+@import "foundation/components/visibility";
 
 /* Bourbon */
 @import "bourbon/bourbon";
