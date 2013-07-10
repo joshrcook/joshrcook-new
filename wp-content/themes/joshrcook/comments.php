@@ -21,16 +21,17 @@ The comments page for Bones
 <div class="comments">
 	<div class="row">
 		<div class="columns large-8">
-			<div class="row">
-				<div class="columns large-6">
-					<h1 class="section-title"><?php comments_number('No Comments', '1 Comment', '% Comments'); ?></h1>
-				</div>
-				<div class="columns large-6">
-					<button class="button medium">Leave a Comment</button>
-				</div>
-			</div>
 
 			<?php if ( have_comments() ) : ?>
+
+				<div class="row">
+					<div class="columns large-6">
+						<h1 class="section-title"><?php comments_number('No Comments', '1 Comment', '% Comments'); ?></h1>
+					</div>
+					<div class="columns large-6">
+						<button class="button medium">Leave a Comment</button>
+					</div>
+				</div>
 
 				<ol class="comment-list">
 					<?php wp_list_comments(array('type' => 'comment', 'callback' => 'jrc_post_comments')); ?>
