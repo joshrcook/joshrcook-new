@@ -11,11 +11,7 @@
                 </script>    
             </div>
             <div class="columns large-9 text-right nav">
-                <ul class="nav">
-                    <?php 
-                        print_nav_menu($post->ID);
-                    ?>
-                </ul>
+                <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
             </div>
     </div>
     <div class="row hero">

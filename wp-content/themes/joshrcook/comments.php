@@ -19,42 +19,44 @@ The comments page for Bones
 <!-- You can start editing here. -->
 
 
-			<?php if ( have_comments() ) : ?>
-			
-				<div class="comments">
-					<div class="row">
-						<div class="columns large-8">
+<?php if ( have_comments() ) { ?>
 
-							<div class="row">
-								<div class="columns large-6">
-									<h1 class="section-title"><?php comments_number('No Comments', '1 Comment', '% Comments'); ?></h1>
-								</div>
-								<div class="columns large-6">
-									<button class="button medium">Leave a Comment</button>
-								</div>
-							</div>
+	<div class="comments">
+		<div class="row">
+			<div class="columns large-8">
 
-							<ol class="comment-list">
-								<?php wp_list_comments(array('type' => 'comment', 'callback' => 'jrc_post_comments')); ?>
-							</ol>
-
-							<?php else : // this is displayed if there are no comments so far ?>
-
-							<?php if ( comments_open() ) : ?>
-									<!-- If comments are open, but there are no comments. -->
-
-							<?php else : // comments are closed ?>
-
-							<!-- If comments are closed. -->
-							<p class="nocomments"><?php _e("Comments are closed.", "bonestheme"); ?></p>
-
-							<?php endif; ?>
-
-						</div>
+				<div class="row">
+					<div class="columns large-6">
+						<h1 class="section-title"><?php comments_number('No Comments', '1 Comment', '% Comments'); ?></h1>
+					</div>
+					<div class="columns large-6">
+						<button class="button medium">Leave a Comment</button>
 					</div>
 				</div>
 
-			<?php endif; ?>
+				<ol class="comment-list">
+					<?php wp_list_comments(array('type' => 'comment', 'callback' => 'jrc_post_comments')); ?>
+				</ol>
+
+				<?php  } else { ?> // this is displayed if there are no comments so far ?>
+
+				<?php if ( comments_open() ) : ?>
+						<!-- If comments are open, but there are no comments. -->
+
+				<?php else : // comments are closed ?>
+
+				<!-- If comments are closed. -->
+				<p class="nocomments"><?php _e("Comments are closed.", "bonestheme"); ?></p>
+
+				<?php endif; ?>
+
+<?php } ?>
+
+<?php if( have_comments()) { ?>
+			</div>
+		</div>
+	</div>
+<?php } ?>
 
 <div class="comment-reply">
 	<div class="row">
@@ -114,7 +116,6 @@ The comments page for Bones
 				</form>
 
 				<?php endif; // If registration required and not logged in ?>
-			</section>
 
 			<?php endif; // if you delete this the sky will fall on your head ?>
 

@@ -158,9 +158,9 @@
     <div class="row">
         <div class="columns large-6 large-centered text-center">
             <div class="button-group">
-                <a href="#" class="button medium main-button">Plan a Project</a>
+                <a href="#" class="button medium main-button button-left">Plan a Project</a>
                 <span class="or">or</span>
-                <a href="#" class="button medium main-button">Contact Us</a>
+                <a href="#" class="button medium main-button button-right">Contact Us</a>
             </div>
         </div>
     </div>

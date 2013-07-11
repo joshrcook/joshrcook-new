@@ -100,6 +100,8 @@ header {
 			border: none;
 			text-transform: none;
 			padding: 0;
+			color: white;
+			box-shadow: none;
 		}
 	}
 
@@ -198,12 +200,18 @@ header {
 .button {
 	text-transform: uppercase;
 	background-color: $color3;
-	border: 1px solid $color4;
 	color: white;
 	font-weight: 600;
+	border: none;
+	box-shadow: none;
+	border-radius: 5px;
 
 	&.main-button {
 		margin: 4em auto;
+	}
+
+	&:hover {
+		background-color: $color4;
 	}
 }
 
@@ -329,7 +337,8 @@ i {
 	.button-group {
 		margin: 3.5em auto 6em auto;
 		position: relative;
-		height: 45px;
+		$button-group-height: 2.8125;
+		height: $button-group-height * 1em;
 
 		.button {
 			width: 50%;
@@ -337,22 +346,37 @@ i {
 			padding-right: 0;
 			margin: 0;
 			float: left;
+
+			&.button-left {
+				border-top-right-radius: 0;
+				border-bottom-right-radius: 0;
+				border-right: 1px solid $color4;
+			}
+
+			&.button-right {
+				border-top-left-radius: 0;
+				border-bottom-left-radius: 0;
+				border-left: 1px solid $color4;
+			}
 		}
 
 		.or {
+			$width: 1.8;
 			position: absolute;
 			left: 50%;
 			top: 50%;
-			height: 2em;
-			width: 2em;
-			margin-left: -1em;
-			margin-top: -0.6em;
+			height: $width * 1em;
+			width: $width * 1em;
+			margin-left: ($width/-2) * 1em;
+			margin-top: -.66em;
 			font-weight: 500;
 			font-size: 1.5em;
-			line-height: 2em;
+			line-height: $width;
 			color: white;
 			background-color: $color4;
 			border-radius: 100px;
+			z-index: 10;
+
 		}
 	}
 }
