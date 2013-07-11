@@ -1936,6 +1936,7 @@ th.hide-for-touch {
 /* Another gray */
 /* Yet another gray */
 /* Another very light gray */
+/* Footer upper color */
 /* Dark dark grey */
 /* Teal */
 /* Darker Teal */
@@ -2355,7 +2356,7 @@ footer {
         color: #b7b7b7;
         font-size: .75em; }
   footer section.footer-upper {
-    background-color: #4c4c4c;
+    background-color: #353535;
     padding-bottom: 2em; }
     footer section.footer-upper a:hover {
       text-decoration: none; }
@@ -2385,7 +2386,7 @@ footer {
     footer section.footer-upper .social.linked-in:hover {
       background-color: #0073b2; }
   footer section.footer-lower {
-    background-color: #3e3e3e;
+    background-color: #262626;
     color: #b7b7b7; }
     footer section.footer-lower .columns {
       margin: .5em auto;

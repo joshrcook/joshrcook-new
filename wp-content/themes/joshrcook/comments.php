@@ -38,7 +38,7 @@ The comments page for Bones
 					<?php wp_list_comments(array('type' => 'comment', 'callback' => 'jrc_post_comments')); ?>
 				</ol>
 
-				<?php  } else { ?> // this is displayed if there are no comments so far ?>
+				<?php  } else { // this is displayed if there are no comments so far ?>
 
 				<?php if ( comments_open() ) : ?>
 						<!-- If comments are open, but there are no comments. -->
