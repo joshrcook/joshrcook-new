@@ -20,3 +20,4 @@
 		</div>
 	</header>
 </div>
+<div class="clearfix"></div>

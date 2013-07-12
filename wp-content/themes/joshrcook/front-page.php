@@ -35,7 +35,7 @@
     </div>
     <div class="row">
         <div class="columns text-center">
-            <button class="button medium main-button">More Work</button>
+            <button class="button main-button">More Work</button>
         </div>
     </div>
 </section>
