@@ -1,5 +1,7 @@
 <?php
 
+add_theme_support( 'post-thumbnails' );
+
 function add_scripts_styles()
 {
     wp_register_script('modernizr', get_template_directory_uri() . '/js/vendor/modernizr.development.js', array('jquery'));
@@ -29,6 +31,8 @@ function add_scripts_styles()
     	wp_register_script('parallax', get_template_directory_uri() . '/js/parallax.js', array('jquery'), false, true);
     	wp_enqueue_script('parallax');
     }
+
+    wp_register_script('jrc_theme_mixItUp', get_template_directory_uri() . '/js/vendor/mixitup-1.5.4/jquery.mixitup.min.js', array('jquery'));
 }
 
 add_action('wp_enqueue_scripts', 'add_scripts_styles');

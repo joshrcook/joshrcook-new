@@ -1,5 +1,5 @@
 <?php get_header('internal'); ?>
-
+<section class="internal">
 <div class="row">
 	<div class="columns large-8">
 		<div class="blog-content">
@@ -28,6 +28,7 @@
 		</div>
 	</div>
 </div>
+</section>
 <?php comments_template(); ?>
 
 <?php get_footer(); ?>

@@ -14,7 +14,7 @@
                     }
                 </script> 
             </div>
-            <div class="columns large-9 text-right">
+            <div class="columns large-9 text-right hide-for-small">
 				<?php wp_nav_menu(array('theme_location' => 'primary')); ?>
 			</div>
 		</div>

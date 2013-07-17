@@ -24,7 +24,7 @@
                     foreach($works as $work_item) {
                         ?>
                         <li>
-                            <a href="<?php get_permalink($work_item->ID); ?>"><?php echo get_the_post_thumbnail($work_item->ID, 'full'); ?></a>
+                            <a href="<?php echo get_permalink($work_item->ID); ?>"><?php echo get_the_post_thumbnail($work_item->ID, 'full'); ?></a>
                         </li>
                         <?php
                     }
@@ -35,7 +35,7 @@
     </div>
     <div class="row">
         <div class="columns text-center">
-            <button class="button main-button">More Work</button>
+            <a href="<?php echo get_post_type_archive_link('jrc_por'); ?>"><button class="button main-button">More Work</button></a>
         </div>
     </div>
 </section>

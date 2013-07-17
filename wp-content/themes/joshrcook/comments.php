@@ -29,7 +29,7 @@ The comments page for Bones
 					<div class="columns large-6">
 						<h1 class="section-title"><?php comments_number('No Comments', '1 Comment', '% Comments'); ?></h1>
 					</div>
-					<div class="columns large-6">
+					<div class="columns large-6 text-right">
 						<button class="button medium">Leave a Comment</button>
 					</div>
 				</div>
@@ -107,7 +107,7 @@ The comments page for Bones
 				<?php endif; ?>
 
 				<p>
-					<input name="submit" type="submit" id="submit" class="button" tabindex="5" value="<?php _e('Submit', 'bonestheme'); ?>" />
+					<input name="submit" type="submit" id="submit" class="button" tabindex="5" value="<?php _e('Submit Comment', 'bonestheme'); ?>" />
 					<?php comment_id_fields(); ?>
 				</p>
 

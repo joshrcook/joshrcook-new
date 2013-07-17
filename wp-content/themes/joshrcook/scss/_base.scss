@@ -29,9 +29,46 @@ h1, h2, h3, h4, h5, h6 {
 	color: $color1;
 }
 
+h1 {
+	font-size: 3em;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 1;
+}
+
+.call-to-action {
+	font-size: 2rem;
+	margin: 0;
+}
+
+img.full-width {
+	width: 100%;
+}
+
+.secondary-back {
+	background-color: $color5;
+}
+
+.callout-box {
+	padding: 1em;
+
+	> :first-child {
+		margin-top: 0;
+	}
+
+	p {
+		color: $color6;
+	}
+}
+
 .clearfix {
 	@include clearfix();
-	margin-bottom: 9.5em;
+	margin-bottom: 7.5em;
+}
+
+// this is to make sure the columns line up correctly on the portfolio page
+[class*="column"] + [class*="column"]:last-child {
+	float: left;
 }
 
 form.contact-form {
@@ -102,8 +139,7 @@ header {
 
 					&:hover {
 						text-decoration: none;
-						background-color: #1ba79b;
-
+						background-color: $color4;
 					}
 				}
 			}
@@ -181,6 +217,7 @@ header {
 
 .orbit-container {
 	background-color: white;
+	margin-bottom: 2em;
 
 	.orbit-slides-container {
 
@@ -247,13 +284,41 @@ header {
 	border: none;
 	box-shadow: none;
 	border-radius: 5px;
+	margin: 1em 0;
+	padding: .6em 2.3em;
+	font-weight: 500;
+	font-size: 1.1em;
+	margin: 0;
 
 	&.main-button {
 		margin: 4em auto;
+		padding: .65em 3.5em;
+		font-size: 1.5em;
 	}
 
 	&:hover {
 		background-color: $color4;
+	}
+
+	&.small {
+		font-size: 1.1em;
+	}
+
+	&.filter.active {
+		background-color: $color4;
+	}
+}
+
+.inline-buttons {
+	margin-bottom: 3em;
+	margin-top: 2em;
+
+	.button {
+		margin: 0 .9em .9em 0;
+
+		&.selected {
+			background-color: $color4;
+		}
 	}
 }
 
@@ -261,14 +326,18 @@ a.button:hover {
 	text-decoration: none;
 }
 
-.button.medium, .button, input[type=submit] {
-	padding: .65em 3.5em;
-	font-size: 1.5em;
-	margin: 1em 0;
-}
-
 section:nth-child(2n + 1), section:nth-child(2n + 1) h1.section-title {
 	background-color: $color5;
+}
+
+section.internal {
+	background-color: white;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+
+	&:nth-of-type(2) {
+		background-color: $color5;
+	}
 }
 
 section.blog {
@@ -435,44 +504,130 @@ i {
 	}
 
 	h1 {
-		font-size: 3em;
 		margin-bottom: .2em;
-		margin-top: 0;
 	}
 
 	div.post-details {
 		color: $color6;
 		font-size: 1.1em;
 	}
+}
 
-	p {
-		font-size: 1.1em;
-	}
+.page-content {
 
 	> p:first-of-type {
 		color: $color6;
-		font-size: 1.8em;
+		font-size: 1.6em;
+		font-weight: 100;
+	}
+}
+
+p {
+	font-size: 1.1em;
+}
+
+blockquote {
+	background-color: $color4;
+	margin-left: 0;
+	margin-right: 0;
+	background-image: url(img/assets/icons/quote-left2.png);
+	background-position: 1.2em 1.2em;
+	background-repeat: no-repeat;
+
+	p {
+		padding: .5em;
+		padding-left: 3em;
+		line-height: 1.5;
+		color: white;
+		font-size: 1.7em;
 		font-weight: 100;
 	}
 
-	blockquote {
-		background-color: $color4;
-		margin-left: 0;
-		margin-right: 0;
-		background-image: url(img/assets/icons/quote-left2.png);
-		background-position: 1.2em 1.2em;
-		background-repeat: no-repeat;
+	span {
+		display: block;
+		text-align: right;
+		font-style: italic;
 
-		p {
-			padding: .5em;
-			padding-left: 3em;
-			line-height: 1.5;
-			color: white;
-			font-size: 1.8em;
-			font-weight: 100;
+		&:before {
+			content: "— ";
 		}
-		
 	}
+	
+}
+
+/* Portfolio Grid */
+.ct-darken-overlay {
+	position: relative;
+
+	.darken-overlay {
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		background-color: rgba(0,0,0,.4);
+		position: absolute;
+		@include transition(all, .3s, ease-in-out);
+
+		i {
+			$i-width: 4;
+			font-size: $i-width * 1rem;
+			position: absolute;
+			left: 50%;
+			margin-left: $i-width / 2 * -1rem;
+			top: 15%;
+			@include transition(all, .3s, ease-in-out);
+		}
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	.overlay-contents {
+		position:relative; 
+		width: 100%;
+		height: 100%;
+
+		&:hover i {
+			top: 35%;
+		}
+	}
+}
+
+
+.grid-3 {
+
+	.grid-column {
+		text-align: center;
+
+		img {
+			height: 200px;
+			width: auto;
+		}
+	}
+
+	h2 {
+		font-weight: 600;
+		text-align: left;
+
+		a {
+			color: $color1;
+			font-weight: 600;
+			font-size: 1.45rem;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+	.subtitle {
+		text-align: left;
+	}
+}
+
+.subtitle {
+	color: #b0b0b0;
+	font-size: 1.25rem;
 }
 
 /* Sidebar */
@@ -609,6 +764,14 @@ i {
 	font-size: 1.4em;
 }
 
+/* Main portfolio page */
+.mix {
+	opacity: 0;
+	display: none;
+}
+
+
+/* Footer */
 footer {
 	color: white;
 
