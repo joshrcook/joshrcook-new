@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="fixed">
-	<header class="header-internal">
+	<header class="l-header-internal l-top-bar">
 		<div class="row">
 			<div class="columns large-3">
 				<div class="logo">

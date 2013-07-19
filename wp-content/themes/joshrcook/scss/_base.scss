@@ -1,3 +1,300 @@
+///////////////////////////////////////////////////////////////////////////////////
+//
+// 88888888ba        db        ad88888ba  88888888888  
+// 88      "8b      d88b      d8"     "8b 88           
+// 88      ,8P     d8'`8b     Y8,         88           
+// 88aaaaaa8P'    d8'  `8b    `Y8aaaaa,   88aaaaa      
+// 88""""""8b,   d8YaaaaY8b     `"""""8b, 88"""""      
+// 88      `8b  d8""""""""8b          `8b 88           
+// 88      a8P d8'        `8b Y8a     a8P 88           
+// 88888888P" d8'          `8b "Y88888P"  88888888888
+//
+///////////////////////////////////////////////////////////////////////////////////
+/* The defaults. They are almost exclusively single element selectors but it could
+ * include attribute selectors, pseudo-class selectors, child selectors or sibling
+ * selectors.
+ */
+
+ .no-margin-btm {
+ 	margin-bottom: 0;
+ }
+
+ .no-margin-top {
+ 	margin-top: 0;
+ }
+
+ /*============================================>
+	HR
+ <=============================================*/
+hr {
+	border: 0;
+
+	&.thick {
+		height: 3px;
+	}
+
+	&.colored {
+		background-color: $color3;
+	}
+}
+
+ /*============================================>
+	SEPERATOR
+ <=============================================*/
+.seperator {
+	margin-bottom: 2rem;
+}
+
+///////////////////////////////////////////////////////////////////////////////////
+//
+// 88                 db   8b        d8 ,ad8888ba,   88        88 888888888888  
+// 88                d88b   Y8,    ,8P d8"'    `"8b  88        88      88       
+// 88               d8'`8b   Y8,  ,8P d8'        `8b 88        88      88       
+// 88              d8'  `8b   "8aa8"  88          88 88        88      88       
+// 88             d8YaaaaY8b   `88'   88          88 88        88      88       
+// 88            d8""""""""8b   88    Y8,        ,8P 88        88      88       
+// 88           d8'        `8b  88     Y8a.    .a8P  Y8a.    .a8P      88       
+// 88888888888 d8'          `8b 88      `"Y8888Y"'    `"Y8888Y"'       88     
+//
+///////////////////////////////////////////////////////////////////////////////////
+/* Divides the page into sections. Layouts hold one or more modules together.
+ */
+
+/*============================================>
+  HEADER
+<=============================================*/
+header {
+	background: url('img/assets/bg/road-veryhigh-1000-600.jpg');
+	background-size: cover;
+	background-position: 60% 30%;
+
+	&.l-header-internal {
+		background-image: none;
+		background-color: $color11;
+		height: 7.5em;
+		margin-bottom: 2em;
+
+		.columns {
+			margin-top: 0;
+		}
+
+		ul.menu {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+
+			li {
+				display: inline-block;
+				line-height: 7.4em;
+				margin-left: 2em;
+
+				a {
+					color: white;
+					font-size: 20px;
+					font-weight: 500;
+					padding: .4em 1em;
+					border-radius: 5px;
+					@include transition (background-color, .2s, linear );
+
+					&:hover {
+						text-decoration: none;
+						background-color: $color4;
+					}
+				}
+			}
+		}
+
+		div.logo {
+			line-height: 7.4em;
+		}
+
+		img#logo {
+			height: 5em;
+			width: auto;
+			line-height: 7.5em;
+		}
+	}
+
+	.columns {
+		margin-top: 2em;
+	}
+
+	.logo {
+		text-align: center;
+
+		img {
+			height: 150px;
+			width: 150px;
+		}
+
+	}
+
+	.nav {
+		display: none;
+
+		.button {
+			background-color: inherit;
+			border: none;
+			text-transform: none;
+			padding: 0;
+			color: white;
+			box-shadow: none;
+		}
+	}
+
+	.hero {
+
+		h1 {
+			color: white;
+			font-weight: 600;
+			font-size: 2.7em;
+			margin-bottom: 30%;
+			margin-top: 30%;
+			display: inline-block;
+			text-transform: none;
+		}
+	}
+}
+ 
+///////////////////////////////////////////////////////////////////////////////////
+//
+// 88b           d88                      88             88             
+// 888b         d888                      88             88             
+// 88`8b       d8'88                      88             88             
+// 88 `8b     d8' 88  ,adPPYba,   ,adPPYb,88 88       88 88  ,adPPYba,  
+// 88  `8b   d8'  88 a8"     "8a a8"    `Y88 88       88 88 a8P_____88  
+// 88   `8b d8'   88 8b       d8 8b       88 88       88 88 8PP"""""""  
+// 88    `888'    88 "8a,   ,a8" "8a,   ,d88 "8a,   ,a88 88 "8b,   ,aa  
+// 88     `8'     88  `"YbbdP"'   `"8bbdP"Y8  `"YbbdP'Y8 88  `"Ybbd8"'
+//
+///////////////////////////////////////////////////////////////////////////////////
+/* The reusable, modular parts of our design. They are the callouts, the sidebar
+ * sections, the product lists and so on.
+ */ 
+
+ /*============================================>
+	BLOCKQUOTE SLIDER
+ <=============================================*/
+
+.m-blqt {
+	color: $color3;
+
+	.orbit-container {
+		margin-bottom: .5em;
+	}
+
+	.orbit-prev, .orbit-next {
+		display: none;
+	}
+
+	.orbit-bullets {
+		display: inline-block;
+		padding: 0;
+
+		li {
+			background-color: white;
+			width: 11px;
+			height: 11px; 
+			border: 2px solid $color3;
+			margin-right: 1rem;
+		}
+
+		li.active {
+			background-color: $color3;
+		}
+	}
+
+	i {
+		color: $color3;
+		font-size: 1.8em;
+	}
+
+	p {
+		font-size: 1.5em;
+	}
+}
+
+.m-blqt-quote {
+	margin-top: 0;
+}
+
+.m-blqt-author {
+	font-size: .9em;
+	font-style: italic;
+	text-align: right;
+
+	&:before {
+		content: '— ';
+	}
+}
+
+ /*============================================>
+	MEET US MODULE
+ <=============================================*/
+.m-meet {
+
+	img {
+		border-radius: 150px;
+	}
+
+	h2 {
+		margin-bottom: .5rem;
+	}
+
+	.subtitle {
+		margin-top: 0;
+	}
+}
+ 
+///////////////////////////////////////////////////////////////////////////////////
+//                                                      
+//  ad88888ba 888888888888   db   888888888888 88888888888  
+// d8"     "8b     88       d88b       88      88           
+// Y8,             88      d8'`8b      88      88           
+// `Y8aaaaa,       88     d8'  `8b     88      88aaaaa      
+//   `"""""8b,     88    d8YaaaaY8b    88      88"""""      
+//         `8b     88   d8""""""""8b   88      88           
+// Y8a     a8P     88  d8'        `8b  88      88           
+//  "Y88888P"      88 d8'          `8b 88      88888888888
+//
+///////////////////////////////////////////////////////////////////////////////////
+/* Ways to describe how our modules or layouts will look when in a particular state.
+ * Is it hidden or expanded? Is it active or inactive? They are about describing how
+ * a module or layout looks on screens that are smaller or bigger. They are also
+ * about describing how a module might look in different views like the home page or
+ * the inside page.
+ */ 
+
+/*============================================>
+  MAIN PAGE CONTENT
+<=============================================*/
+
+.l-content {
+
+	> p:first-of-type {
+		color: $color6;
+		font-size: 1.6em;
+		font-weight: 100;
+	}
+}
+ 
+///////////////////////////////////////////////////////////////////////////////////
+//                                                                  
+// 888888888888 88        88 88888888888 88b           d88 88888888888  
+//      88      88        88 88          888b         d888 88           
+//      88      88        88 88          88`8b       d8'88 88           
+//      88      88aaaaaaaa88 88aaaaa     88 `8b     d8' 88 88aaaaa      
+//      88      88""""""""88 88"""""     88  `8b   d8'  88 88"""""      
+//      88      88        88 88          88   `8b d8'   88 88           
+//      88      88        88 88          88    `888'    88 88           
+//      88      88        88 88888888888 88     `8'     88 88888888888  
+//
+///////////////////////////////////////////////////////////////////////////////////
+/* Similar to state rules in that they describe how modules or layouts might look.
+ * Most sites don’t require a layer of theming but it is good to be aware of it.
+ */ 
+
+
 body {
 	font-size: 14px;
 	font-family: $font1;
@@ -32,7 +329,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
 	font-size: 3em;
 	margin-top: 0;
-	margin-bottom: 0;
+	margin-bottom: .5em;
 	line-height: 1;
 }
 
@@ -101,99 +398,6 @@ textarea {
 	&:focus {
 		background-color: white;
 		border-color: #999;
-	}
-}
-
-header {
-	background: url('img/assets/bg/road-veryhigh-1000-600.jpg');
-	background-size: cover;
-	background-position: 60% 30%;
-
-	&.header-internal {
-		background-image: none;
-		background-color: $color11;
-		height: 7.5em;
-		margin-bottom: 2em;
-
-		.columns {
-			margin-top: 0;
-		}
-
-		ul.menu {
-			margin: 0;
-			padding: 0;
-			list-style-type: none;
-
-			li {
-				display: inline-block;
-				line-height: 7.4em;
-				margin-left: 2em;
-
-				a {
-					color: white;
-					font-size: 20px;
-					font-weight: 500;
-					padding: .4em 1em;
-					border-radius: 5px;
-					@include transition (background-color, .2s, linear );
-
-					&:hover {
-						text-decoration: none;
-						background-color: $color4;
-					}
-				}
-			}
-		}
-
-		div.logo {
-			line-height: 7.4em;
-		}
-
-		img#logo {
-			height: 5em;
-			width: 5em;
-			line-height: 7.5em;
-		}
-	}
-
-	.columns {
-		margin-top: 2em;
-	}
-
-	.logo {
-		text-align: center;
-
-		img {
-			height: 150px;
-			width: 150px;
-		}
-
-	}
-
-	.nav {
-		display: none;
-
-		.button {
-			background-color: inherit;
-			border: none;
-			text-transform: none;
-			padding: 0;
-			color: white;
-			box-shadow: none;
-		}
-	}
-
-	.hero {
-
-		h1 {
-			color: white;
-			font-weight: 600;
-			font-size: 2.7em;
-			margin-bottom: 30%;
-			margin-top: 30%;
-			display: inline-block;
-			text-transform: none;
-		}
 	}
 }
 
@@ -335,7 +539,7 @@ section.internal {
 	padding-top: 3rem;
 	padding-bottom: 3rem;
 
-	&:nth-of-type(2) {
+	&:nth-of-type(2n) {
 		background-color: $color5;
 	}
 }
@@ -510,15 +714,6 @@ i {
 	div.post-details {
 		color: $color6;
 		font-size: 1.1em;
-	}
-}
-
-.page-content {
-
-	> p:first-of-type {
-		color: $color6;
-		font-size: 1.6em;
-		font-weight: 100;
 	}
 }
 

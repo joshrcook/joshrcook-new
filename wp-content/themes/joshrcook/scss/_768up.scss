@@ -10,6 +10,15 @@ body {
 	}
 }
 
+.columns-2 {
+	@include column-count(2);
+	margin-top: 1em;
+
+	> *:first-child {
+		margin-top: 0;
+	}
+}
+
 $logoHeight: 180px;
 
 header {

@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"border-",
+				"border-radius"
+			],
+			[
 				"font-",
 				"font-style"
 			],
@@ -510,60 +514,48 @@
 			[
 				"array_key",
 				"array_key_exists"
-			],
-			[
-				"column",
-				"column-width"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "wp-content/themes/joshrcook/single-jrc_por.php",
+			"file": "wp-content/themes/joshrcook/page-about.php",
 			"settings":
 			{
-				"buffer_size": 431,
+				"buffer_size": 2080,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "wp-content/themes/joshrcook/jrc_por-slider.php",
+			"file": "wp-content/themes/joshrcook/functions.php",
 			"settings":
 			{
-				"buffer_size": 383,
+				"buffer_size": 7875,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "wp-content/themes/joshrcook/sidebar-work.php",
+			"file": "wp-content/themes/joshrcook/archive-jrc_por.php",
 			"settings":
 			{
-				"buffer_size": 447,
+				"buffer_size": 1205,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "wp-content/themes/joshrcook/scss/_base.scss",
+			"file": "wp-content/themes/joshrcook/scss/_768up.scss",
 			"settings":
 			{
-				"buffer_size": 11701,
+				"buffer_size": 1060,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "wp-content/themes/joshrcook/jrc_por-content.php",
+			"file": "wp-content/plugins/jrc_staff/jrc_staff_init.php",
 			"settings":
 			{
-				"buffer_size": 144,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/joshrcook/scss/_variables.scss",
-			"settings":
-			{
-				"buffer_size": 759,
+				"buffer_size": 681,
 				"line_ending": "Unix"
 			}
 		},
@@ -576,42 +568,42 @@
 			}
 		},
 		{
-			"file": "wp-content/themes/joshrcook/archive-jrc_por.php",
+			"file": "wp-content/plugins/jrc_quotes/jrc_quotes_init.php",
 			"settings":
 			{
-				"buffer_size": 618,
+				"buffer_size": 583,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "wp-content/themes/joshrcook/functions.php",
+			"file": "wp-content/themes/joshrcook/jrc_quote-slider.php",
 			"settings":
 			{
-				"buffer_size": 7731,
+				"buffer_size": 697,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "wp-content/themes/joshrcook/library.bak/admin.php",
+			"file": "wp-content/themes/joshrcook/scss/_base.scss",
 			"settings":
 			{
-				"buffer_size": 4860,
+				"buffer_size": 17933,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "wp-content/themes/joshrcook/library.bak/bones.php",
+			"file": "wp-content/themes/joshrcook/scss/_variables.scss",
 			"settings":
 			{
-				"buffer_size": 14269,
+				"buffer_size": 759,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "wp-content/themes/joshrcook/single-post.php",
+			"file": "wp-content/plugins/jrc_staff/Easy-WordPress-Custom-Post-Types/jw_custom_posts.php",
 			"settings":
 			{
-				"buffer_size": 868,
+				"buffer_size": 13112,
 				"line_ending": "Unix"
 			}
 		}
@@ -640,26 +632,36 @@
 	},
 	"file_history":
 	[
+		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/jrc_quote-single.php",
+		"/Applications/MAMP/htdocs/joshrcook/wp-content/plugins/jrc_staff/Easy-WordPress-Custom-Post-Types/jw_custom_posts.php",
+		"/Applications/MAMP/htdocs/joshrcook/wp-content/plugins/jrc_staff_slim/jrc_staff_init.php",
+		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/scss/style.scss",
+		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/header-internal.php",
 		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/scss/_variables.scss",
-		"/Applications/MAMP/htdocs/joshrcook/wp-content/plugins/jrc_portfolio/jrc_por_init.php",
-		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/scss/foundation/_variables.scss",
-		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/comments.php",
+		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/page-contact-us.php",
+		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/scss/_767down.scss",
 		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/scss/_base.scss",
-		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/index.php",
+		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/functions.php",
+		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/inc/MixItUp.class.php",
 		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/content-jrc_por_grid.php",
 		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/archive-jrc_por.php",
+		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/single-post.php",
+		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/library.bak/bones.php",
+		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/library.bak/admin.php",
+		"/Applications/MAMP/htdocs/joshrcook/wp-content/plugins/jrc_portfolio/jrc_por_init.php",
+		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/jrc_por-content.php",
+		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/sidebar-work.php",
+		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/jrc_por-slider.php",
+		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/single-jrc_por.php",
+		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/scss/foundation/_variables.scss",
+		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/comments.php",
+		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/index.php",
 		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/front-page.php",
 		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/content-comments-blog.php",
 		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/footer.php",
 		"/Applications/MAMP/htdocs/joshrcook/wp-content/plugins/jrc_portfolio/jrc_por_functions.php",
 		"/Applications/MAMP/htdocs/joshrcook/wp-content/plugins/jrc_portfolio/Easy-WordPress-Custom-Post-Types/jw_custom_posts.php",
 		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/content-jrc_por.php",
-		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/single-post.php",
-		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/single-jrc_por.php",
-		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/functions.php",
-		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/page-contact-us.php",
-		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/header-internal.php",
-		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/scss/style.scss",
 		"/Applications/MAMP/htdocs/joshrcook/wp-content/themes/joshrcook/header-home.php",
 		"/Applications/MAMP/htdocs/joshrcook/wp-content/plugins/slimjetpack/modules/contact-form/grunion-contact-form.php",
 		"/Applications/MAMP/htdocs/joshrcook/wp-content/plugins/jrc_work/jrc_work_init.php",
@@ -757,17 +759,7 @@
 		"/Applications/MAMP/htdocs/tumblr/index.php",
 		"/Applications/MAMP/htdocs/tumblr/header.php",
 		"/Applications/MAMP/htdocs/card/style.css",
-		"/Applications/MAMP/htdocs/card/index.php",
-		"/Applications/MAMP/htdocs/School/day_view.php",
-		"/Applications/MAMP/htdocs/School/month_view.php",
-		"/Applications/MAMP/htdocs/tumblr/inc/functions.php",
-		"/Applications/MAMP/htdocs/tumblr/test.php",
-		"/Applications/MAMP/htdocs/javascript/MM_JAVASCRIPT2E/chapter02/arrays.html",
-		"/Applications/MAMP/htdocs/test/style.css",
-		"/Applications/MAMP/htdocs/test/index.php",
-		"/Applications/MAMP/htdocs/Tumblr_site/landing.php",
-		"/Applications/MAMP/htdocs/javascript/MM_JAVASCRIPT2E/chapter02/prompt.html",
-		"/Applications/MAMP/htdocs/javascript/MM_JAVASCRIPT2E/chapter02/use_variable.html"
+		"/Applications/MAMP/htdocs/card/index.php"
 	],
 	"find":
 	{
@@ -786,6 +778,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"h1",
+			"even",
+			"\"",
+			"max-width",
+			"button",
+			"h2",
+			"section",
 			"button",
 			"first",
 			"section",
@@ -906,14 +905,7 @@
 			"width: ",
 			"10px",
 			";",
-			":",
-			"link",
-			"1",
-			"input",
-			"length",
-			"\n",
-			"length",
-			"tr"
+			":"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -934,23 +926,23 @@
 	"groups":
 	[
 		{
-			"selected": 11,
+			"selected": 8,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "wp-content/themes/joshrcook/single-jrc_por.php",
+					"file": "wp-content/themes/joshrcook/page-about.php",
 					"settings":
 					{
-						"buffer_size": 431,
+						"buffer_size": 2080,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								234,
-								234
+								1194,
+								1194
 							]
 						],
 						"settings":
@@ -959,31 +951,30 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 109.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "wp-content/themes/joshrcook/jrc_por-slider.php",
+					"file": "wp-content/themes/joshrcook/functions.php",
 					"settings":
 					{
-						"buffer_size": 383,
+						"buffer_size": 7875,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								194,
-								194
+								5,
+								5
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -993,71 +984,18 @@
 				},
 				{
 					"buffer": 2,
-					"file": "wp-content/themes/joshrcook/sidebar-work.php",
+					"file": "wp-content/themes/joshrcook/archive-jrc_por.php",
 					"settings":
 					{
-						"buffer_size": 447,
+						"buffer_size": 1205,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								403,
-								403
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "wp-content/themes/joshrcook/scss/_base.scss",
-					"settings":
-					{
-						"buffer_size": 11701,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4201,
-								4201
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 4198.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "wp-content/themes/joshrcook/jrc_por-content.php",
-					"settings":
-					{
-						"buffer_size": 144,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								118,
-								118
+								1033,
+								1033
 							]
 						],
 						"settings":
@@ -1072,24 +1010,25 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "wp-content/themes/joshrcook/scss/_variables.scss",
+					"buffer": 3,
+					"file": "wp-content/themes/joshrcook/scss/_768up.scss",
 					"settings":
 					{
-						"buffer_size": 759,
+						"buffer_size": 1060,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								163,
+								163
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage"
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1098,7 +1037,33 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 4,
+					"file": "wp-content/plugins/jrc_staff/jrc_staff_init.php",
+					"settings":
+					{
+						"buffer_size": 681,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								361,
+								361
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
 					"file": "wp-content/plugins/jrc_portfolio/jrc_por_init.php",
 					"settings":
 					{
@@ -1109,8 +1074,8 @@
 						"selection":
 						[
 							[
-								1007,
-								1007
+								694,
+								435
 							]
 						],
 						"settings":
@@ -1119,25 +1084,51 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 17.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "wp-content/themes/joshrcook/archive-jrc_por.php",
+					"buffer": 6,
+					"file": "wp-content/plugins/jrc_quotes/jrc_quotes_init.php",
 					"settings":
 					{
-						"buffer_size": 618,
+						"buffer_size": 583,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								244,
-								190
+								298,
+								307
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "wp-content/themes/joshrcook/jrc_quote-slider.php",
+					"settings":
+					{
+						"buffer_size": 697,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								436,
+								436
 							]
 						],
 						"settings":
@@ -1153,63 +1144,63 @@
 				},
 				{
 					"buffer": 8,
-					"file": "wp-content/themes/joshrcook/functions.php",
+					"file": "wp-content/themes/joshrcook/scss/_base.scss",
 					"settings":
 					{
-						"buffer_size": 7731,
+						"buffer_size": 17933,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1225,
+								1225
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 54.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 9,
-					"file": "wp-content/themes/joshrcook/library.bak/admin.php",
+					"file": "wp-content/themes/joshrcook/scss/_variables.scss",
 					"settings":
 					{
-						"buffer_size": 4860,
+						"buffer_size": 759,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								708,
+								701
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1287.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 10,
-					"file": "wp-content/themes/joshrcook/library.bak/bones.php",
+					"file": "wp-content/plugins/jrc_staff/Easy-WordPress-Custom-Post-Types/jw_custom_posts.php",
 					"settings":
 					{
-						"buffer_size": 14269,
+						"buffer_size": 13112,
 						"regions":
 						{
 						},
@@ -1222,37 +1213,12 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1619.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "wp-content/themes/joshrcook/single-post.php",
-					"settings":
-					{
-						"buffer_size": 868,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								814,
-								814
-							]
-						],
-						"settings":
-						{
 							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 914.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

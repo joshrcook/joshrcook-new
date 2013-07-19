@@ -28,7 +28,7 @@
 			<h2 class="call-to-action">Like our work? We'd love to work with you!</h2>
 		</div>
 		<div class="columns large-3 text-right small-text-center">
-			<a href="#"><button class="button">Contact Us</button></a>
+			<a href="<?php echo get_permalink(get_page_by_title('Contact')); ?>"><button class="button">Contact Us</button></a>
 		</div>
 	</div>
 </section>

@@ -2,7 +2,7 @@
 <section class="internal">
 <div class="row">
 	<div class="columns large-8">
-		<div class="blog-content">
+		<div class="l-content">
 			<?php if(have_posts()) : while(have_posts()) : the_post(); 
 
 			if(has_post_thumbnail()) {

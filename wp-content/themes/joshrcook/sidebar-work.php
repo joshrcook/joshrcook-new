@@ -3,7 +3,7 @@
 	<p><strong>Skills Used: </strong><?php echo get_the_term_list($post->ID, 'portfolio_tags', '', ', '); ?>
 </p>
 	<div class="text-center">
-		<a href="<?php echo get_post_meta($post->ID, 'work_link_link', true); ?>">
+		<a href="<?php echo get_post_meta($post->ID, 'work_link_link', true); ?>" target="_blank">
 			<button class="button">View Live Project</button>
 		</a>
 	</div>

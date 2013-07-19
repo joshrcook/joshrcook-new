@@ -4,6 +4,12 @@ add_theme_support( 'post-thumbnails' );
 
 function add_scripts_styles()
 {
+	// enqueue the top bar handler on internal pages 
+    if(!is_front_page()) {
+    	wp_register_script('top-bar-size-handler', get_template_directory_uri() . '/js/top-bar-size.js', array('jquery'));
+    	wp_enqueue_script('top-bar-size-handler');
+    }
+    
     wp_register_script('modernizr', get_template_directory_uri() . '/js/vendor/modernizr.development.js', array('jquery'));
     wp_enqueue_script('modernizr');
     wp_register_style('open-sans-google-font', 'http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800');
