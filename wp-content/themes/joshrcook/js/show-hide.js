@@ -12,8 +12,8 @@ jQuery(document).ready(function($) {
     // depending on what it's current state is
     $("[class^='show-hide-controller-']").click(function() {
         var clickNumber = $(this).attr('class').split('controller-')[1];
+        var clickNumber = clickNumber.split(' ')[0]; // in case there is another class added on
         $('.show-hide-' + clickNumber).slideToggle('slow');
-        console.log('clicked');
     }); 
    
     // function to hide everything at a certain width
