@@ -660,7 +660,7 @@ a.button:hover {
 	text-decoration: none;
 }
 
-section:nth-child(2n + 1), section:nth-child(2n + 1) h1.section-title {
+section:nth-child(2n), section:nth-child(2n) h1.section-title {
 	background-color: $color5;
 }
 
