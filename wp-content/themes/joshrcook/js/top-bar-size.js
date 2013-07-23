@@ -1,7 +1,7 @@
 jQuery(function($) {
 	$minHeight = 70;
 	$topBar = $('.l-top-bar');
-	$menuItems = $('.menu-item');
+	$menuItems = $('.l-header-internal .menu-item');
 	$image = $('#logo');
 	$imageContainer = $('div.logo');
 	$startingHeight = $topBar.height();

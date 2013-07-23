@@ -51,6 +51,8 @@
         <?php 
             $first_post = true;
             query_posts(array('post_type' => 'post', 'posts_per_page' => 4));
+            global $more;
+            $more = 0;
             if(have_posts()): while(have_posts()): the_post();
                 if($first_post) { ?>
                     <div class="columns large-7 main-post">
@@ -60,7 +62,7 @@
                             <a href="<?php echo get_permalink(get_the_ID()); ?>"><span class="comments"><a href="#"><?php echo $post->comment_count; ?> Comments</a></span></a>&nbsp;/&nbsp;
                             <span class="category">Category: </span><span class="category-title"><a href="#"><?php the_terms(get_the_ID(), 'category'); ?></a></span> 
                         </p>
-                        <p class="post-excerpt"><?php the_excerpt(); ?></p>
+                        <p class="post-excerpt"><?php the_content('Read More...'); ?></p>
                     </div>
                     <div class="columns large-4 large-offset-1 post-list">
                 <?php } else {
@@ -82,7 +84,7 @@
     </div><!-- end row -->
     <div class="row">
         <div class="columns text-center">
-            <a href="#">
+            <a href="<?php echo get_permalink(get_page_by_title('Blog')); ?>">
                 <button class="button main-button">Go to Blog</button>
             </a>
         </div>
@@ -157,11 +159,9 @@
     </div>
     <div class="row">
         <div class="columns large-6 large-centered text-center">
-            <div class="button-group">
-                <a href="#" class="button medium main-button button-left">Plan a Project</a>
-                <span class="or">or</span>
-                <a href="#" class="button medium main-button button-right">Contact Us</a>
-            </div>
+            <a href="#">
+                <button class="button main-button">Contact Us</button>
+            </a>
         </div>
     </div>
 </section>

@@ -39,6 +39,9 @@ function add_scripts_styles()
     }
 
     wp_register_script('jrc_theme_mixItUp', get_template_directory_uri() . '/js/vendor/mixitup-1.5.4/jquery.mixitup.min.js', array('jquery'));
+
+    wp_register_script('show-hide', get_template_directory_uri() . '/js/show-hide.js', array('jquery'));
+    wp_enqueue_script('show-hide'); 
 }
 
 add_action('wp_enqueue_scripts', 'add_scripts_styles');

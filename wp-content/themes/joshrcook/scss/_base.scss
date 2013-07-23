@@ -120,7 +120,6 @@ header {
 	}
 
 	.logo {
-		text-align: center;
 
 		img {
 			height: 150px;
@@ -130,7 +129,6 @@ header {
 	}
 
 	.nav {
-		display: none;
 
 		.button {
 			background-color: inherit;
@@ -139,6 +137,35 @@ header {
 			padding: 0;
 			color: white;
 			box-shadow: none;
+		}
+
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+
+			li {
+				display: inline-block;
+				margin-right: 1.75em;
+				font-size: .93em;
+
+				a {
+					color: white;
+					text-decoration: none;
+					font-family: $font1;
+					font-size: 1.875em;
+					letter-spacing: .05em;
+					font-weight: 500;
+
+					&.home-controller {
+						line-height: 6em;
+					}
+				}
+			}
+
+			li:last-child {
+				margin-right: 0;
+			}
 		}
 	}
 
@@ -155,6 +182,60 @@ header {
 		}
 	}
 }
+
+ /*============================================>
+	MAIN PAGE CONTENT
+ <=============================================*/
+.l-content {
+
+	img {
+		margin-bottom: 2rem;
+	}
+}
+
+ /*============================================>
+	SIDEBAR
+ <=============================================*/
+.l-sidebar {
+
+	h4 {
+		margin-top: 0;
+		font-size: 2.1em;
+		line-height: 1;
+		width: 100%;
+		margin-bottom: .6em;
+		border-bottom: 2px solid $color16;
+		padding-bottom: .6em;
+	}
+
+	ul {
+		padding: 0;
+		list-style-type: none;
+
+		li {
+			font-size: 1.6em;
+
+			a {
+				color: $color1;
+				font-weight: 500;
+				margin-bottom: .2em;
+				display: block;
+
+				&:hover {
+					text-decoration: none;
+				}
+			}
+
+			span {
+				display: block;
+				font-size: .6em;
+				margin-bottom: 2em;
+				color: $color6;
+			}
+		}
+	}
+}
+
  
 ///////////////////////////////////////////////////////////////////////////////////
 //
@@ -245,6 +326,45 @@ header {
 		margin-top: 0;
 	}
 }
+
+ /*============================================>
+	LIST SEPERATOR
+ <=============================================*/
+.m-list-seperator {
+	background-color: $color4;
+	margin: 3.6rem auto;
+	height: 4px;
+}
+
+ /*============================================>
+	MOBILE NAVIGATION
+ <=============================================*/
+.m-mobile-menu {
+	background-color: $color15;
+	display: none;
+
+	ul {
+		padding: 0;
+		list-style-type: none;
+		margin: 0;
+	}
+
+	a {
+		color: white;
+		line-height: 2.7rem;
+		font-size: 1.2rem;
+		font-weight: 500;
+		display: block;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	li {
+		border-bottom: 1px solid rgb(76, 76, 76);
+	}
+}
  
 ///////////////////////////////////////////////////////////////////////////////////
 //                                                      
@@ -273,7 +393,7 @@ header {
 
 	> p:first-of-type {
 		color: $color6;
-		font-size: 1.6em;
+		font-size: 1.4em;
 		font-weight: 100;
 	}
 }
@@ -331,6 +451,16 @@ h1 {
 	margin-top: 0;
 	margin-bottom: .5em;
 	line-height: 1;
+
+	a {
+		font-weight: inherit;
+		color: inherit;
+		margin: inherit;
+		
+		&:hover {
+			text-decoration: none;
+		}
+	}
 }
 
 .call-to-action {
@@ -495,7 +625,7 @@ textarea {
 	margin: 0;
 
 	&.main-button {
-		margin: 4em auto;
+		margin: 1em auto 4em;
 		padding: .65em 3.5em;
 		font-size: 1.5em;
 	}
@@ -825,47 +955,6 @@ blockquote {
 	font-size: 1.25rem;
 }
 
-/* Sidebar */
-.sidebar {
-
-	h4 {
-		margin-top: 0;
-		font-size: 2.1em;
-		line-height: 1;
-		width: 100%;
-		margin-bottom: .9em;
-		border-bottom: 1px solid $color2;
-		padding-bottom: .9em;
-	}
-
-	ul {
-		padding: 0;
-		list-style-type: none;
-
-		li {
-			font-size: 1.8em;
-
-			a {
-				color: $color1;
-				text-transform: uppercase;
-				font-weight: 600;
-				margin-bottom: .2em;
-				display: block;
-
-				&:hover {
-					text-decoration: none;
-				}
-			}
-
-			span {
-				display: block;
-				font-size: .6em;
-				margin-bottom: 2em;
-				color: $color6;
-			}
-		}
-	}
-}
 
 /* Comments */
 .comments {
