@@ -11,7 +11,7 @@
 			<?php get_template_part('content', 'blog_list'); ?>
 		</div>
 	</div>
-	<div class="columns large-3 large-offset-1">
+	<div class="columns large-4">
 		<?php get_sidebar('blog_main'); ?>
 	</div>
 </div>

@@ -10,7 +10,7 @@
 		<div class="columns large-8 l-content">
 			<?php get_template_part('jrc_por', 'content'); ?>
 		</div>
-		<div class="columns large-3 large-offset-1">
+		<div class="columns large-4">
 			<?php get_sidebar('work'); ?>
 		</div>	
 	</div>
