@@ -19,7 +19,7 @@ body {
 	}
 }
 
-$logoHeight: 180px;
+$logoHeight: 150;
 
 header {
 
@@ -58,7 +58,7 @@ header {
 					font-family: $font1;
 					font-size: 1.875em;
 					letter-spacing: .05em;
-					line-height: $logoHeight;
+					line-height: $logoHeight * 1px;
 					font-weight: 500;
 				}
 			}

@@ -1,3 +1,5 @@
+$logoHeight: 180;
+
 header {
 
 	&.l-header-internal {
@@ -20,6 +22,10 @@ header {
 			li {
 				margin-right: 2.75em;
 				font-size: 1em;
+
+				a {
+					line-height: $logoHeight * 1px;
+				}
 			}
 		}
 	}
@@ -34,7 +40,7 @@ header {
 	.logo {
 
 		img {
-			height: 180px;
+			height: $logoHeight * 1px;
 			width: 180px;
 		}
 	}
