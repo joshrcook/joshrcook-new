@@ -598,6 +598,10 @@ textarea {
 
 ol.orbit-bullets {
 	display: none;
+
+	li {
+		display: none;
+	}
 	
 	/*
 	li {
