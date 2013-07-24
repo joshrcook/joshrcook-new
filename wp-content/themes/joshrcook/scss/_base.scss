@@ -598,6 +598,8 @@ textarea {
 
 .orbit-bullets {
 	display: none;
+	
+	/*
 	li {
 		height: 9px;
 		width: 9px;
@@ -608,6 +610,7 @@ textarea {
 	li.active {
 		background-color: rgba(0,0,0, 0.6);
 	}
+	*/
 }
 
 .button, input[type=submit] {
