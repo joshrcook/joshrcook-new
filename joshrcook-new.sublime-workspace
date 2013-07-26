@@ -531,7 +531,7 @@
 			"file": "wp-content/themes/joshrcook/scss/_481up.scss",
 			"settings":
 			{
-				"buffer_size": 26,
+				"buffer_size": 77,
 				"line_ending": "Unix"
 			}
 		},
@@ -547,7 +547,7 @@
 			"file": "wp-content/themes/joshrcook/scss/_768up.scss",
 			"settings":
 			{
-				"buffer_size": 1174,
+				"buffer_size": 1124,
 				"line_ending": "Unix"
 			}
 		},
@@ -555,7 +555,7 @@
 			"file": "wp-content/themes/joshrcook/scss/_base.scss",
 			"settings":
 			{
-				"buffer_size": 19539,
+				"buffer_size": 19584,
 				"line_ending": "Unix"
 			}
 		},
@@ -563,7 +563,7 @@
 			"file": "wp-content/themes/joshrcook/scss/_960up.scss",
 			"settings":
 			{
-				"buffer_size": 240,
+				"buffer_size": 384,
 				"line_ending": "Unix"
 			}
 		},
@@ -786,6 +786,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".orbit-bull",
+			"img",
 			"section",
 			"logo",
 			"footer",
@@ -911,9 +913,7 @@
 			"objective",
 			"class=",
 			"../assets/",
-			"-moz",
-			"</div>",
-			"z-index"
+			"-moz"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -934,7 +934,7 @@
 	"groups":
 	[
 		{
-			"selected": 9,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -970,15 +970,15 @@
 					"file": "wp-content/themes/joshrcook/scss/_481up.scss",
 					"settings":
 					{
-						"buffer_size": 26,
+						"buffer_size": 77,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								26,
-								26
+								72,
+								72
 							]
 						],
 						"settings":
@@ -1022,15 +1022,15 @@
 					"file": "wp-content/themes/joshrcook/scss/_768up.scss",
 					"settings":
 					{
-						"buffer_size": 1174,
+						"buffer_size": 1124,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								824,
-								414
+								359,
+								774
 							]
 						],
 						"settings":
@@ -1039,7 +1039,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 571.0,
+						"translation.y": 409.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1049,15 +1049,15 @@
 					"file": "wp-content/themes/joshrcook/scss/_base.scss",
 					"settings":
 					{
-						"buffer_size": 19539,
+						"buffer_size": 19584,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								12790,
-								12790
+								17692,
+								17692
 							]
 						],
 						"settings":
@@ -1066,7 +1066,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 5280.0,
+						"translation.y": 15124.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1076,15 +1076,15 @@
 					"file": "wp-content/themes/joshrcook/scss/_960up.scss",
 					"settings":
 					{
-						"buffer_size": 240,
+						"buffer_size": 384,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								85,
-								85
+								382,
+								382
 							]
 						],
 						"settings":
