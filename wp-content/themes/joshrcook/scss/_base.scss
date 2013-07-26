@@ -509,8 +509,13 @@ label {
 	color: $color12;
 	font-size: 1.125em;
 	font-weight: 300;
-	display: inline-block;
+	display: block;
 	margin-bottom: .5em;
+}
+
+[id^="contact-form"] blockquote {
+	background-color: white;
+	background-image: none;
 }
 
 input[type=text], 
