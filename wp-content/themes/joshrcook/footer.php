@@ -50,7 +50,7 @@
 </footer>		
         <script>
             jQuery(document).foundation('orbit', {
-                timer_speed: 3000,
+                timer_speed: 4000,
                 pause_on_hover: false
             });
         </script>

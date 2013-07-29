@@ -278,6 +278,8 @@ header {
 			height: 11px; 
 			border: 2px solid $color3;
 			margin-right: 1rem;
+			display: inline-block;
+			float: none;
 		}
 
 		li.active {
@@ -866,7 +868,7 @@ p {
 }
 
 blockquote {
-	background-color: $color4;
+	background-color: $color3;
 	margin-left: 0;
 	margin-right: 0;
 	background-image: url(img/assets/icons/quote-left2.png);
