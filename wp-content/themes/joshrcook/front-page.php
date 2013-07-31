@@ -59,7 +59,7 @@
                         <a href="<?php echo get_permalink(); ?>"><h2><?php echo get_the_title(get_the_ID()); ?></h2></a>
                         <p class="post-details">
                             <time datetime="<?php echo get_the_date('Y-m-d'); ?>"><?php the_date('M j, Y'); ?></time>&nbsp;/&nbsp;
-                            <a href="<?php echo get_permalink(get_the_ID()); ?>"><span class="comments"><a href="#"><?php echo $post->comment_count; ?> Comments</a></span></a>&nbsp;/&nbsp;
+                            <a href="<?php echo get_permalink(get_the_ID()); ?>"><span class="comments"><?php echo $post->comment_count; ?> Comments</span></a>&nbsp;/&nbsp;
                             <span class="category">Category: </span><span class="category-title"><a href="#"><?php the_terms(get_the_ID(), 'category'); ?></a></span> 
                         </p>
                         <p class="post-excerpt"><?php the_content('Read More...'); ?></p>
