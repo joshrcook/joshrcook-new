@@ -1,0 +1,51 @@
+/*!
+Theme Name: Alexis Contreras
+Theme URI: 
+Description: This theme was built especially for Alexis Contreras.  It is built to be responsive, clean, and easy to use.
+Author: Joshua Cook
+Author URI: http://www.joshrcook.com
+Version: 1.0
+Tags: flexble-width, translation-ready, microformats, rtl-language-support
+License: 
+License URI: 
+*/
+
+/* Foundation components */
+@import "foundation/variables";
+@import "foundation/normalize";
+@import "foundation/components/global";
+@import "foundation/components/buttons";
+@import "foundation/components/forms";
+@import "foundation/components/grid";
+@import "foundation/components/inline-lists";
+@import "foundation/components/top-bar";
+@import "foundation/components/visibility";
+
+/* Bourbon */
+@import "bourbon/bourbon";
+
+/* Variables */
+@import "variables";
+
+/* Mixins */
+@import "mixins";
+
+/* Base */
+@import "base";
+
+/* Media queries */
+@media only screen and (min-width: 481px) {
+	@import "481up";
+}
+
+@media only screen and (max-width: 767px) {
+	@import "767down";
+}
+
+@media only screen and (min-width: 768px) {
+	@import "768up";
+}
+
+@media only screen and (min-width: 960px) {
+	@import "960up";
+}
