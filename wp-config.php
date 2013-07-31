@@ -22,7 +22,7 @@ if($_SERVER['HTTP_HOST'] == 'localhost:8888') {
 	$db_name = 'joshrcoo_portfolio';
 	$db_user = 'joshrcoo_root';
 	$db_pass = 'IloveTara23!!';
-	$db_prefix = 'jrc_por_';
+	$db_prefix = 'joshrcook_wp_';
 }
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */

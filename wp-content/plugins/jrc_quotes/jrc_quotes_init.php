@@ -10,7 +10,7 @@ Author URI: joshrcook.com
 License: GPL2
 */
 
-require_once('Easy-Wordpress-Custom-Post-Types/jw_custom_posts.php');
+require_once(plugin_dir_path(__FILE__) . 'Easy-Wordpress-Custom-Post-Types/jw_custom_posts.php');
 
 $jrc_quotes = new JW_Post_Type('jrc_quote', array(
 		'singular_name' => 'Quote',
