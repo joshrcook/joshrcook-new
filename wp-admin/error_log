@@ -1,3 +1,0 @@
-[10-Jul-2013 09:30:39] PHP Parse error:  syntax error, unexpected '<' in /home1/joshrcoo/public_html/joshrcook/wp-config.php on line 16
-[31-Jul-2013 07:58:11 America/Denver] PHP Warning:  require_once(/home1/joshrcoo/public_html/wp-load.php): failed to open stream: No such file or directory in /home1/joshrcoo/public_html/wp-admin/admin-ajax.php on line 20
-[31-Jul-2013 07:58:12 America/Denver] PHP Fatal error:  require_once(): Failed opening required '/home1/joshrcoo/public_html/wp-load.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home1/joshrcoo/public_html/wp-admin/admin-ajax.php on line 20
