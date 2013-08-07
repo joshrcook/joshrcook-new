@@ -16,15 +16,14 @@ function add_scripts_styles()
     wp_enqueue_style('open-sans-google-font');
     wp_register_style('source-sans-pro-google-font', 'http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic');
     wp_enqueue_style('source-sans-pro-google-font');
-    wp_register_style('font-awesome', '//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css');
+
+    wp_register_style('font-awesome', '//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css');
     wp_enqueue_style('font-awesome');
 
     // enqueue foundation 4 base
-    wp_register_script('foundation-4', get_template_directory_uri() . '/vendor/foundation-4.2.2.custom.orbit/js/foundation/foundation.js', array('jquery'));
+    wp_register_script('foundation-4', get_template_directory_uri() . '/vendor/foundation-4.2.2.custom.orbit/js/foundation.min.js', array('jquery'));
     wp_enqueue_script('foundation-4');
-    // enqueue foundation 4 orbit
-    wp_register_script('foundation-4-orbit', get_template_directory_uri() . '/vendor/foundation-4.2.2.custom.orbit/js/foundation/foundation.orbit.js', array('jquery', 'foundation-4'));
-     wp_enqueue_script('foundation-4-orbit');
+    
     // enqueue foundation 4 styles
     wp_register_style('foundation-4-orbit-css', get_template_directory_uri() . '/vendor/foundation-4.2.2.custom.orbit/css/foundation.min.css');
     wp_enqueue_style('foundation-4-orbit-css');
