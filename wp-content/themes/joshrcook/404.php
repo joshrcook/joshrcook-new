@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('404'); ?>
 
 			<div id="content">
 

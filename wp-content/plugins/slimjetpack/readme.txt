@@ -7,7 +7,7 @@ kytetv, livevideo, redlasso, rockyou, rss, scribd, slide, slideshare,
 soundcloud, vimeo, shortlinks, wp.me, mosaic, gallery, slideshow
 Requires at least: 3.3
 Tested up to: 3.5
-Stable tag: 2.2.2.4
+Stable tag: 2.3.3
 
 Slim version of Jetpack unlinked from WordPress.com :)
 Supercharge your self-hosted wp site even you're NOT WP.COM users.
@@ -44,6 +44,7 @@ You need to activate the modules one by one manually.
 
 * Carousel
 * Sharing
+* Omnisearch
 * Spelling and Grammar
 * Gravatar Hovercards
 * Contact Form

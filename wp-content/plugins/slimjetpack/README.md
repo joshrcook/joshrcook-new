@@ -4,7 +4,7 @@ Contributors: automattic, apeatling, beaulebens, hugobaeta, Joen, mdawaffe, andy
 Tags: views, tweets, twitter, widget, gravatar, hovercards, profile, equations, latex, math, maths, youtube, shortcode, archives, audio, blip, bliptv, dailymotion, digg, flickr, googlevideo, google, googlemaps, kyte, kytetv, livevideo, redlasso, rockyou, rss, scribd, slide, slideshare, soundcloud, vimeo, shortlinks, wp.me, mosaic, gallery, slideshow
 Requires at least: 3.3
 Tested up to: 3.5
-Stable tag: 2.2
+Stable tag: 2.3.3
 
 Supercharge your WordPress site with powerful features even you're not WordPress.com users :)
 I don't have a wordpress plugin publisher account yet so this plugin will be located here temporarily.
@@ -26,6 +26,7 @@ and use the original Jetpack instead.
 ==Modules Included==
 Carousel
 Sharing
+Omnisearch
 Spelling and Grammar
 Gravatar Hovercards
 Contact Form
