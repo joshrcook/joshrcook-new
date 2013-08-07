@@ -9,7 +9,7 @@
 		</div>
 		<div class="columns large-4">
 			<div class="l-sidebar">
-				<?php get_sidebar('blog'); ?>
+				<?php get_sidebar('blog_main'); ?>
 			</div>
 		</div>
 	</div>
