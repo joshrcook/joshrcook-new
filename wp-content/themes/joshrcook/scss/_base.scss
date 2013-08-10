@@ -48,11 +48,12 @@ hr {
  /*============================================>
 	PRE
  <=============================================*/
-pre {
-	background-color: $color15;
-	color: gainsboro;
+pre, code {
+	background-color: #f8f8f8;
+	color: gray;
 	padding: 1em;
 	border-radius: 5px;
+	display: block;
 }
 
 ///////////////////////////////////////////////////////////////////////////////////

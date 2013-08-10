@@ -34,7 +34,7 @@
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-XXXXX-X']);
+  _gaq.push(['_setAccount', 'UA-39992144-1']);
   _gaq.push(['_trackPageview','/404error/?url=' + document.location.pathname + document.location.search + '&ref=' + document.referrer]);
 
   (function() {
@@ -49,7 +49,6 @@
 </head>
 
 <body <?php body_class(); ?>>
-
 <div class="fixed">
 	<div class="show-hide-1 row m-mobile-menu">
 		<div class="columns text-center">

@@ -34,7 +34,7 @@
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-XXXXX-X']);
+  _gaq.push(['_setAccount', 'UA-39992144-1']);
   _gaq.push(['_trackPageview']);
 
   (function() {
@@ -49,5 +49,3 @@
 </head>
 
 <body <?php body_class(); ?>>
-
-            

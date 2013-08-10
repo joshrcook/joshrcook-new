@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 <div class="show-hide-1 row m-mobile-menu">
     <div class="columns text-center">
         <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
